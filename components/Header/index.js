@@ -33,8 +33,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
               <div className="flex items-center"> 
                {data.darkMode && (
                   <Button
-                    onClick={() =>
-                      setTheme(theme === "dark" ? "light" : "dark")
+                     onClick={() =>
+                        window.open("https://instagram.com/imrobwe")
                     }
                   >
                     <img
@@ -81,7 +81,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
 
             {mounted && theme && data.darkMode && (
               <Button
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                 onClick={() =>
+                        window.open("https://instagram.com/imrobwe")
+                    }
               >
                 <img
                   className="h-6"
