@@ -1,0 +1,200 @@
+{
+  "name": "IMROBWE",
+  "darkMode":true,
+  "showResume":true,
+  "projects_1": [
+    {
+      "id": "1",
+      "title": "Sajama Cut",
+      "description": "Sajama Cut at WTF23",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo1.jpg",
+      "url": ""
+    },
+    {
+      "id": "2",
+      "title": "Armand Maulana Gigi",
+      "description": "Gigi at Pertamina Eco Fest 2022",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo3.jpg",
+      "url": ""
+    },
+    {
+      "id": "3",
+      "title": "The Panturas",
+      "description": "Design",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo2.jpg",
+      "url": "http://chetanverma.com/"
+    },
+    {
+      "id": "4",
+      "title": "Project Four",
+      "description": "Marketing",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo6.jpg",
+      "url": ""
+    },
+    {
+      "id": "5",
+      "title": "Project Five",
+      "description": "Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo7.jpg",
+      "url": ""
+    },
+    {
+      "id": "6",
+      "title": "Project Six",
+      "description": "Design & Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo8.jpg",
+      "url": ""
+    },
+    {
+      "id": "7",
+      "title": "Project Six",
+      "description": "Design & Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo8.jpg",
+      "url": ""
+    },
+    {
+      "id": "8",
+      "title": "Project Six",
+      "description": "Design & Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo8.jpg",
+      "url": ""
+    },
+    {
+      "id": "9",
+      "title": "Project Six",
+      "description": "Design & Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo8.jpg",
+      "url": ""
+    }
+  ],
+  "projects_2": [
+    {
+      "id": "1",
+      "title": "Sajama Cut",
+      "description": "Sajama Cut at WTF23",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo1.jpg",
+      "url": ""
+    },
+    {
+      "id": "2",
+      "title": "Armand Maulana Gigi",
+      "description": "Gigi at Pertamina Eco Fest 2022",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo3.jpg",
+      "url": ""
+    },
+    {
+      "id": "3",
+      "title": "The Panturas",
+      "description": "Design",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo2.jpg",
+      "url": "http://chetanverma.com/"
+    },
+    {
+      "id": "4",
+      "title": "Project Four",
+      "description": "Marketing",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo6.jpg",
+      "url": ""
+    },
+    {
+      "id": "5",
+      "title": "Project Five",
+      "description": "Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo7.jpg",
+      "url": ""
+    },
+    {
+      "id": "6",
+      "title": "Project Six",
+      "description": "Design & Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo8.jpg",
+      "url": ""
+    },
+    {
+      "id": "7",
+      "title": "Project Six",
+      "description": "Design & Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo8.jpg",
+      "url": ""
+    },
+    {
+      "id": "8",
+      "title": "Project Six",
+      "description": "Design & Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo8.jpg",
+      "url": ""
+    },
+    {
+      "id": "9",
+      "title": "Project Six",
+      "description": "Design & Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo8.jpg",
+      "url": ""
+    }
+  ],
+  "projects_3": [
+   {
+      "id": "1",
+      "title": "Sajama Cut",
+      "description": "Sajama Cut at WTF23",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo1.jpg",
+      "url": ""
+    },
+    {
+      "id": "2",
+      "title": "Armand Maulana Gigi",
+      "description": "Gigi at Pertamina Eco Fest 2022",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo3.jpg",
+      "url": ""
+    },
+    {
+      "id": "3",
+      "title": "The Panturas",
+      "description": "Design",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo2.jpg",
+      "url": "http://chetanverma.com/"
+    },
+    {
+      "id": "4",
+      "title": "Project Four",
+      "description": "Marketing",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo6.jpg",
+      "url": ""
+    },
+    {
+      "id": "5",
+      "title": "Project Five",
+      "description": "Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo7.jpg",
+      "url": ""
+    },
+    {
+      "id": "6",
+      "title": "Project Six",
+      "description": "Design & Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo8.jpg",
+      "url": ""
+    },
+    {
+      "id": "7",
+      "title": "Project Six",
+      "description": "Design & Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo8.jpg",
+      "url": ""
+    },
+    {
+      "id": "8",
+      "title": "Project Six",
+      "description": "Design & Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo8.jpg",
+      "url": ""
+    },
+    {
+      "id": "9",
+      "title": "Project Six",
+      "description": "Design & Development",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/concert/main/photo8.jpg",
+      "url": ""
+    }
+  ]
+}
