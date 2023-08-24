@@ -42,7 +42,7 @@ export default function Home() {
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
                 {data.projects_1.map((project) => (
                   <WorkCard
-                    // key={project.id}
+                    key={project.id}
                     img={project.imageSrc}
                     // name={project.title}
                     // description={project.description}
@@ -54,7 +54,7 @@ export default function Home() {
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
                 {data.projects_2.map((project) => (
                   <WorkCard
-                    // key={project.id}
+                    key={project.id}
                     img={project.imageSrc}
                     // name={project.title}
                     // description={project.description}
@@ -66,7 +66,7 @@ export default function Home() {
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
                 {data.projects_3.map((project) => (
                   <WorkCard
-                    // key={project.id}
+                    key={project.id}
                     img={project.imageSrc}
                     // name={project.title}
                     // description={project.description}
