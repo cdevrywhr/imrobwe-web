@@ -20,7 +20,6 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
   return (
     <>
       <Popover className="block tablet:hidden mt-5">
-        {({ open }) => (
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
               <h1
@@ -40,12 +39,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
                     <img
                       className="h-6"
                       src={`/images/${
-                        theme === "dark" ? "igdark.svg" : "ig.svg"
+                        theme === "dark" ? "igdark.svg" : "igdark.svg"
                       }`}
                     ></img>
                   </Button>
                 )}  
-                {data.darkMode && (
+                {/* {data.darkMode && (
                   <Button
                     onClick={() =>
                       setTheme(theme === "dark" ? "light" : "dark")
@@ -58,12 +57,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
                       }`}
                     ></img>
                   </Button>
-                )}  
+                )}   */}
               </div>
             </div>
-            
           </>
-        )}
       </Popover>
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
@@ -92,7 +89,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
               </Button>
             )}
 
-            {mounted && theme && data.darkMode && (
+            {/* {mounted && theme && data.darkMode && (
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
@@ -101,7 +98,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
                 ></img>
               </Button>
-            )}
+            )} */}
           </div>
         )}
       </div>
