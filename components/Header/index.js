@@ -83,7 +83,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
               <Button
                  onClick={() =>
                         window.open("https://instagram.com/imrobwe")
-                    }
+                    }n
               >
                 <img
                   className="h-6"
