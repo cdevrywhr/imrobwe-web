@@ -6,7 +6,7 @@ import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
 
-const Header = ({ handleWorkScroll, handleAboutScroll }) => {
+const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -20,6 +20,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
   return (
     <>
       <Popover className="block tablet:hidden mt-5">
+        {({ open }) => (
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
               <h1
@@ -39,12 +40,13 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
                     <img
                       className="h-6"
                       src={`/images/${
-                        theme === "dark" ? "igdark.svg" : "igdark.svg"
+                        theme === "dark" ? "igdark.svg" : "ig.svg"
                       }`}
                     ></img>
                   </Button>
-                )}  
-                {/* {data.darkMode && (
+                  
+                )} 
+                {data.darkMode && (
                   <Button
                     onClick={() =>
                       setTheme(theme === "dark" ? "light" : "dark")
@@ -57,10 +59,71 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
                       }`}
                     ></img>
                   </Button>
-                )}   */}
+                )}
+                 
+                <Popover.Button>
+                  <img
+                    className="h-5"
+                    src={`/images/${
+                      !open
+                        ? theme === "dark"
+                          ? "menu-white.svg"
+                          : "menu.svg"
+                        : theme === "light"
+                        ? "cancel.svg"
+                        : "cancel-white.svg"
+                    }`}
+                  ></img>
+                </Popover.Button>
               </div>
             </div>
+            <Popover.Panel
+              className={`absolute right-0 z-10 w-11/12 p-4 ${
+                theme === "dark" ? "bg-slate-800" : "bg-white"
+              } shadow-md rounded-md`}
+            >
+              
+              {!isBlog ? (
+                <div className="grid grid-cols-1">
+                  {/* <Button onClick={handleWorkScroll}>Work</Button> */}
+                  {showBlog && (
+                    <Button onClick={() => router.push("/blog")}>Blog</Button>
+                  )}
+                  {/* {showResume && (
+                    <Button
+                      onClick={() =>
+                        window.open("mailto:robyjulian212@gmail.com")
+                      }
+                    >
+                      Resume
+                    </Button>
+                  )} */}
+                  {/* <Button onClick={() => router.push("/blog")}>Blog</Button> */}
+                  <Button
+                    onClick={() => window.open("mailto:robyjulian212@gmail.com")}
+                  >
+                    Contact
+                  </Button>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1">
+                  {/* <Button onClick={() => router.push("/")} classes="first:ml-1">
+                    Home
+                  </Button> */}
+                  {showBlog && (
+                    <Button onClick={() => router.push("/blog")}>Blog</Button>
+                  )}
+                  
+                  <Button
+                    onClick={() => window.open("mailto:robyjulian212@gmail.com")}
+                  >
+                    Contact
+                  </Button>
+                </div>
+              )}
+            </Popover.Panel>
           </>
+        )}
       </Popover>
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
@@ -73,9 +136,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
         >
           {name}.
         </h1>
-        {(
+        {!isBlog ? (
           <div className="flex">
-
+            {showBlog && (
+              <Button onClick={() => router.push("/blog")}>Blog</Button>
+            )}
+            {/* <Button onClick={() => router.push("/blog")}>Blog</Button> */}
             {mounted && theme && data.darkMode && (
               <Button
                  onClick={() =>
@@ -89,7 +155,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
               </Button>
             )}
 
-            {/* {mounted && theme && data.darkMode && (
+            {mounted && theme && data.darkMode && (
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
@@ -98,7 +164,36 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
                 ></img>
               </Button>
-            )} */}
+            )}
+          </div>
+        ):(
+          <div className="flex">
+            {showBlog && (
+                <Button onClick={() => router.push("/blog")}>Blog</Button>
+              )}
+              {mounted && theme && data.darkMode && (
+                <Button
+                  onClick={() =>
+                          window.open("https://instagram.com/imrobwe")
+                      }n
+                >
+                  <img
+                    className="h-6"
+                    src={`/images/${theme === "dark" ? "igdark.svg" : "ig.svg"}`}
+                  ></img>
+                </Button>
+              )}
+
+              {mounted && theme && data.darkMode && (
+                <Button
+                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                >
+                  <img
+                    className="h-6"
+                    src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
+                  ></img>
+                </Button>
+              )}
           </div>
         )}
       </div>

@@ -1,5 +1,7 @@
 {
   "name": "IMROBWE",
+  "showBlog":true,
+  "showResume":true,
   "darkMode":true,
   "projects_1": [
     {

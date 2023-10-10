@@ -37,8 +37,9 @@ export default function Home() {
       <div className="container mx-auto mb-10">
         <Header/>
         
-        <div className="mt-10 laptop:mt-30 p-4 laptop:p-0">
+        <div className="mt-10 laptop:mt-30 tablet:p-0 laptop:p-0">
           <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-3 gap-4">
+            
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
                 {data.projects_1.map((project) => (
                   <WorkCard
