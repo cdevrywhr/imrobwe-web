@@ -94,7 +94,7 @@ const Blog = ({ posts }) => {
                       alt={post.title}
                     ></img>
                     <h2 className="mt-5 text-4xl">{post.title}</h2>
-                    <p className="mt-2 opacity-50 text-lg">{post.preview}</p>
+                    <p className="mt-2 opacity-50 text-lg text-justify">{post.preview}</p>
                     <span className="text-sm mt-5 opacity-25">
                       {ISOToDate(post.date)}
                     </span>
