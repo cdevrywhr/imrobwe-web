@@ -99,11 +99,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 </div>
               ) : (
                 <div className="grid grid-cols-1">
-                  {/* <Button onClick={() => router.push("/")} classes="first:ml-1">
+                  <Button onClick={() => router.push("/")} classes="first:ml-1">
                     Home
-                  </Button> */}
+                  </Button>
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
+                  )}
+                  {showAbout && (
+                    <Button onClick={() => router.push("/about")}>About</Button>
                   )}
                   
                   <Button
@@ -165,6 +168,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           <div className="flex">
             {showBlog && (
                 <Button onClick={() => router.push("/blog")}>Blog</Button>
+              )}
+            {showAbout && (
+              <Button onClick={() => router.push("/about")}>About</Button>
               )}
               {mounted && theme && data.darkMode && (
                 <Button

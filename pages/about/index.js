@@ -45,8 +45,8 @@ const Blog = ({ posts }) => {
             <div className="mt-10 laptop:mt-30 tablet:p-0 laptop:p-0">
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
                   
-                    <img src={`${data.profilepic}`}>
-                    </img>
+                    {/* <img src={`${data.profilepic}`}>
+                    </img> */}
               </div>
               <div className="mt- laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
                   <h5
