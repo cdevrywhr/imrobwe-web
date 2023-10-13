@@ -11,7 +11,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const { name, showBlog, showResume } = data;
+  const { name, showBlog, showResume, showAbout } = data;
 
   useEffect(() => {
     setMounted(true);
@@ -29,7 +29,6 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               >
                 {name}.
               </h1>
-              
               <div className="flex items-center"> 
                {data.darkMode && (
                   <Button
@@ -89,16 +88,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
-                  {/* {showResume && (
-                    <Button
-                      onClick={() =>
-                        window.open("mailto:robyjulian212@gmail.com")
-                      }
-                    >
-                      Resume
-                    </Button>
-                  )} */}
-                  {/* <Button onClick={() => router.push("/blog")}>Blog</Button> */}
+                  {showAbout && (
+                    <Button onClick={() => router.push("/about")}>About</Button>
+                  )}
                   <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
