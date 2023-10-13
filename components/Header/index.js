@@ -8,7 +8,7 @@ import data from "../../data/portfolio.json";
 
 const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
-  const { theme, setTheme } = useTheme();
+  const {theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   const { name, showBlog, showResume, showAbout } = data;
@@ -39,7 +39,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     <img
                       className="h-6"
                       src={`/images/${
-                        theme === "dark" ? "igdark.svg" : "ig.svg"
+                        theme === "light" ? "ig.svg" : "igdark.svg"
                       }`}
                     ></img>
                   </Button>
@@ -48,13 +48,13 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 {data.darkMode && (
                   <Button
                     onClick={() =>
-                      setTheme(theme === "dark" ? "light" : "dark")
+                      setTheme(theme === "light" ? "dark" : "light")
                     }
                   >
                     <img
                       className="h-6"
                       src={`/images/${
-                        theme === "dark" ? "moon.svg" : "sun.svg"
+                        theme === "light" ? "sun.svg" : "moon.svg"
                       }`}
                     ></img>
                   </Button>
@@ -65,10 +65,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     className="h-5"
                     src={`/images/${
                       !open
-                        ? theme === "dark"
-                          ? "menu-white.svg"
-                          : "menu.svg"
-                        : theme === "light"
+                        ? theme === "light"
+                          ? "menu.svg"
+                          : "menu-white.svg"
+                        : theme === "dark"
                         ? "cancel.svg"
                         : "cancel-white.svg"
                     }`}
