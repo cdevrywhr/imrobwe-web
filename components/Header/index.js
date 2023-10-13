@@ -133,6 +133,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
             )}
+            {showAbout && (
+              <Button onClick={() => router.push("/about")}>About</Button>
+            )}
             {/* <Button onClick={() => router.push("/blog")}>Blog</Button> */}
             {mounted && theme && data.darkMode && (
               <Button
