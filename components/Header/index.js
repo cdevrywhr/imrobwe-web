@@ -5,13 +5,14 @@ import React, { useEffect, useState } from "react";
 import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
+import { dark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
   const {theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const { name, showBlog, showResume, showAbout } = data;
+  const { name, showBlog, showResume, showAbout, darkMode } = data;
 
   useEffect(() => {
     setMounted(true);
@@ -30,7 +31,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 {name}.
               </h1>
               <div className="flex items-center"> 
-               {data.darkMode && (
+               {darkMode && (
                   <Button
                      onClick={() =>
                         window.open("https://instagram.com/imrobwe")
@@ -39,22 +40,22 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     <img
                       className="h-6"
                       src={`/images/${
-                        theme === "light" ? "ig.svg" : "igdark.svg"
+                        theme === "dark" ? "igdark.svg" : "ig.svg"
                       }`}
                     ></img>
                   </Button>
                   
                 )} 
-                {data.darkMode && (
+                {darkMode && (
                   <Button
                     onClick={() =>
-                      setTheme(theme === "light" ? "dark" : "light")
+                      setTheme(theme === "dark" ? "light" : "dark")
                     }
                   >
                     <img
                       className="h-6"
                       src={`/images/${
-                        theme === "light" ? "sun.svg" : "moon.svg"
+                        theme === "dark" ? "moon.svg" : "sun.svg"
                       }`}
                     ></img>
                   </Button>
@@ -65,10 +66,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     className="h-5"
                     src={`/images/${
                       !open
-                        ? theme === "light"
-                          ? "menu.svg"
-                          : "menu-white.svg"
-                        : theme === "dark"
+                        ? theme === "dark"
+                          ? "menu-white.svg"
+                          : "menu.svg"
+                        : theme === "light"
                         ? "cancel.svg"
                         : "cancel-white.svg"
                     }`}
