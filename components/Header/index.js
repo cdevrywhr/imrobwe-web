@@ -14,7 +14,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const { name, showBlog, showResume, showAbout } = data;
 
   useEffect(() => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme("light")
     setMounted(true);
   }, []);
 
@@ -69,6 +69,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                         ? theme === "dark"
                           ? "menu-white.svg"
                           : "menu.svg"
+                          
                         : theme === "light"
                         ? "cancel.svg"
                         : "cancel-white.svg"
@@ -121,6 +122,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           </>
         )}
       </Popover>
+      
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
           theme === "light" && "bg-white"
