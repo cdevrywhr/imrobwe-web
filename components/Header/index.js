@@ -5,7 +5,6 @@ import React, { useEffect, useState } from "react";
 import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
-import { dark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
@@ -15,6 +14,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const { name, showBlog, showResume, showAbout } = data;
 
   useEffect(() => {
+    setTheme("dark");
     setMounted(true);
   }, []);
 
@@ -177,7 +177,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 <Button
                   onClick={() =>
                           window.open("https://instagram.com/imrobwe")
-                      }n
+                      }
                 >
                   <img
                     className="h-6"
