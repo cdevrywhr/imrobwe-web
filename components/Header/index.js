@@ -12,7 +12,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const {theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const { name, showBlog, showResume, showAbout, darkMode } = data;
+  const { name, showBlog, showResume, showAbout } = data;
 
   useEffect(() => {
     setMounted(true);
@@ -31,7 +31,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 {name}.
               </h1>
               <div className="flex items-center"> 
-               {darkMode && (
+               {data.darkMode && (
                   <Button
                      onClick={() =>
                         window.open("https://instagram.com/imrobwe")
@@ -46,7 +46,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   </Button>
                   
                 )} 
-                {darkMode && (
+                {data.darkMode && (
                   <Button
                     onClick={() =>
                       setTheme(theme === "dark" ? "light" : "dark")
@@ -145,7 +145,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               <Button
                  onClick={() =>
                         window.open("https://instagram.com/imrobwe")
-                    }n
+                    }
               >
                 <img
                   className="h-6"
