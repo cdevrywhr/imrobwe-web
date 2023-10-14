@@ -14,7 +14,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const { name, showBlog, showResume, showAbout } = data;
 
   useEffect(() => {
-    setTheme("dark");
+    setTheme(theme === "dark" ? "light" : "dark");
     setMounted(true);
   }, []);
 
