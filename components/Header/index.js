@@ -14,7 +14,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const { name, showBlog, showResume, showAbout } = data;
 
   useEffect(() => {
-    setTheme("light")
+    setTheme("dark")
     setMounted(true);
   }, []);
 
@@ -31,7 +31,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 {name}.
               </h1>
               <div className="flex items-center"> 
-               {data.darkMode && (
+               {mounted&&data.darkMode && (
                   <Button
                      onClick={() =>
                         window.open("https://instagram.com/imrobwe")
@@ -46,7 +46,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   </Button>
                   
                 )} 
-                {data.darkMode && (
+                {/* {data.darkMode && (
                   <Button
                     onClick={() =>
                       setTheme(theme === "dark" ? "light" : "dark")
@@ -55,11 +55,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     <img
                       className="h-6"
                       src={`/images/${
-                        theme === "dark" ? "moon.svg" : "sun.svg"
+                        theme === "dark" ? "sun.svg" : "moon.svg"
                       }`}
                     ></img>
                   </Button>
-                )}
+                )} */}
                  
                 <Popover.Button>
                   <img
@@ -68,10 +68,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                       !open
                         ? theme === "dark"
                           ? "menu-white.svg"
-                          : "menu.svg"
+                          : "menu-white.svg"
                           
                         : theme === "light"
-                        ? "cancel.svg"
+                        ? "cancel-white.svg"
                         : "cancel-white.svg"
                     }`}
                   ></img>
@@ -156,7 +156,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            {mounted && theme && data.darkMode && (
+            {/* {mounted && theme && data.darkMode && (
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
@@ -165,7 +165,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
                 ></img>
               </Button>
-            )}
+            )} */}
           </div>
         ):(
           <div className="flex">
@@ -188,7 +188,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 </Button>
               )}
 
-              {mounted && theme && data.darkMode && (
+              {/* {mounted && theme && data.darkMode && (
                 <Button
                   onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 >
@@ -197,7 +197,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
                   ></img>
                 </Button>
-              )}
+              )} */}
           </div>
         )}
       </div>
