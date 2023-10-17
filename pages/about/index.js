@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Router, { useRouter } from "next/router";
+
 import { useEffect, useRef, useState } from "react";
 import { stagger } from "../../animations";
 import Button from "../../components/Button";
@@ -14,15 +15,15 @@ const Blog = ({ posts }) => {
   const router = useRouter();
   const [mounted, setMounted] = useState(false);
 
-  // useIsomorphicLayoutEffect(() => {
-  //   stagger(
-  //     [text.current],
-  //     { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
-  //     { y: 0, x: 0, transform: "scale(1)" }
-  //   );
-  //   if (showBlog.current) stagger([text.current], { y: 30 }, { y: 0 });
-  //   else router.push("/");
-  // }, []);
+  useIsomorphicLayoutEffect(() => {
+    stagger(
+      [text.current],
+      { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
+      { y: 0, x: 0, transform: "scale(1)" }
+    );
+    if (showBlog.current) stagger([text.current], { y: 30 }, { y: 0 });
+    else router.push("/");
+  }, []);
 
   useEffect(() => {
     setMounted(true);
@@ -62,7 +63,7 @@ const Blog = ({ posts }) => {
             </div>
             
             <div className="mt-10 grid grid-cols-1 mob:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 justify-between gap-10">
-              
+             
             </div>
           </div>
         </div>
