@@ -5,7 +5,6 @@ import React, { useEffect, useState } from "react";
 import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
-import Socials from "../Socials";
 
 const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
@@ -21,19 +20,33 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
 
   return (
     <>
-      <div className="gradient-circle"></div>
       <Popover className="block tablet:hidden mt-5">
         {({ open }) => (
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
               <h1
                 onClick={() => router.push("/")}
-                className="font-medium  p-2 laptop:p-0 link"
+                className="font-medium p-2 laptop:p-0 link"
               >
                 {name}.
               </h1>
-              
               <div className="flex items-center"> 
+               {mounted&&data.darkMode && (
+                  <Button
+                     onClick={() =>
+                        window.open("https://instagram.com/imrobwe")
+                    }
+                  >
+                    <img
+                      className="h-6"
+                      // src={`/images/${
+                      //   theme === "dark" ? "igdark.svg" : "ig.svg"
+                      // }`}
+                      src = "/images/igdark.svg"
+                    ></img>
+                  </Button>
+                  
+                )} 
                 {/* {data.darkMode && (
                   <Button
                     onClick={() =>
@@ -51,7 +64,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                  
                 <Popover.Button>
                   <img
-                    className="h-6"
+                    className="h-5"
                     // src={`/images/${
                     //   !open
                     //     ? theme === "dark"
@@ -82,13 +95,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
-
-                  <Button onClick={() => router.push("/about")}>About</Button>
-                  {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-                  {/* <Button onClick={() => router.push("/gear")}>My Gear</Button> */}
-                  {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
-                  <Button onClick={() => window.open("mailto:robyjulian212@gmail.com")}>Contact</Button>
-                  <Socials className="mt-3"/>
+                  {showAbout && (
+                    <Button onClick={() => router.push("/about")}>About</Button>
+                  )}
+                  <Button
+                    onClick={() => window.open("mailto:robyjulian212@gmail.com")}
+                  >
+                    Contact
+                  </Button>
                 </div>
               ) : (
                 <div className="grid grid-cols-1">
@@ -96,11 +110,17 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
-                  <Button onClick={() => router.push("/about")}>About</Button>
+                  {showAbout && (
+                    <Button onClick={() => router.push("/about")}>About</Button>
+                  )}
                   {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-                  {/* <Button onClick={() => router.push("/gear")}>My Gear</Button> */}
-                  {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
-                  <Button onClick={() => window.open("mailto:robyjulian212@gmail.com")}>Contact</Button>
+                  <Button onClick={() => router.push("/analog")}>Analog</Button>
+                  
+                  <Button
+                    onClick={() => window.open("mailto:robyjulian212@gmail.com")}
+                  >
+                    Contact
+                  </Button>
                   <Socials className="mt-3"/>
                 </div>
               )}
@@ -112,28 +132,30 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
           theme === "light" && "bg-white"
-        } dark:text-white top-0 z-10 tablet:flex`}>
-        <div>
-          <h1
-            onClick={() => router.push("/")}
-            className="font-medium font-sans text-center text-xl cursor-pointer mob:p-2 laptop:p-0">
+        } dark:text-white top-0 z-10 tablet:flex`}
+      >
+        <h1
+          onClick={() => router.push("/")}
+          className="font-medium cursor-pointer mob:p-2 laptop:p-0"
+        >
           {name}.
-          </h1>
-        {/* <p className="text-center">ROBWE.</p> */}
-        </div>
-       
-        
+        </h1>
         {!isBlog ? (
           <div className="flex grid grid-rows-2 grid-flow-col">
             <div className="flex col-start-1 col-end-7">
-              {showBlog && (
+               {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
               )}
-              <Button onClick={() => router.push("/about")}>About</Button>
+              {showAbout && (
+                <Button onClick={() => router.push("/about")}>About</Button>
+              )}
               {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-              {/* <Button onClick={() => router.push("/gear")}>My Gear</Button> */}
-              {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
-              <Button onClick={() => window.open("mailto:robyjulian212@gmail.com")}>Contact</Button>
+              <Button onClick={() => router.push("/analog")}>Analog</Button>
+              <Button
+                    onClick={() => window.open("mailto:robyjulian212@gmail.com")}
+                  >
+                    Contact
+              </Button>
             </div>
             <div className="col-end-7 col-span-2 ">
               <Socials/>
@@ -149,20 +171,24 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 ></img>
               </Button>
             )} */}
-           
           </div>
         ):(
           <div className="flex grid grid-rows-2 grid-flow-col">
             
             <div className="flex col-start-1 col-end-7">
-              {showBlog && (
+               {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
               )}
-              <Button onClick={() => router.push("/about")}>About</Button>
+              {showAbout && (
+                <Button onClick={() => router.push("/about")}>About</Button>
+              )}
               {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-              {/* <Button onClick={() => router.push("/gear")}>My Gear</Button> */}
-              {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
-              <Button onClick={() => window.open("mailto:robyjulian212@gmail.com")}>Contact</Button>
+              <Button onClick={() => router.push("/analog")}>Analog</Button>
+              <Button
+                    onClick={() => window.open("mailto:robyjulian212@gmail.com")}
+                  >
+                    Contact
+              </Button>
             </div>
             <div className="col-end-7 col-span-2 ">
               <Socials/>

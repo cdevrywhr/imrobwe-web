@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Header from "../components/Header";
 import WorkCard from "../components/WorkCard";
-import Socials from "../components/Socials";
+import { stagger } from "../animations";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Cursor from "../components/Cursor";
@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
 
       <div className="gradient-circle"></div>
-      
+      <div className="gradient-circle-bottom"></div>
 
       <div className="container mx-auto mb-10">
         <Header/>
@@ -76,7 +76,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Socials className="mt-10 laptop:mt-5 justify-center" />
       <Footer/>
     </div>
     
