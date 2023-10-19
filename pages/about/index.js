@@ -6,11 +6,7 @@ import Cursor from "../../components/Cursor";
 import Header from "../../components/Header";
 import data from "../../data/portfolio.json";
 
-import Socials from "../../components/Socials";
-
-
-
-const About = ({ posts }) => {
+const Blog = ({ posts }) => {
   const showBlog = useRef(data.showBlog);
   const text = useRef();
   const router = useRouter();
@@ -73,4 +69,4 @@ const About = ({ posts }) => {
   );
 };
 
-export default About;
+export default Blog;

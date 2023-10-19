@@ -113,15 +113,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showAbout && (
                     <Button onClick={() => router.push("/about")}>About</Button>
                   )}
-                  {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-                  <Button onClick={() => router.push("/analog")}>Analog</Button>
                   
                   <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
                     Contact
                   </Button>
-                  <Socials className="mt-3"/>
                 </div>
               )}
             </Popover.Panel>
@@ -141,25 +138,26 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           {name}.
         </h1>
         {!isBlog ? (
-          <div className="flex grid grid-rows-2 grid-flow-col">
-            <div className="flex col-start-1 col-end-7">
-               {showBlog && (
+          <div className="flex">
+            {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
-              )}
-              {showAbout && (
-                <Button onClick={() => router.push("/about")}>About</Button>
-              )}
-              {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-              <Button onClick={() => router.push("/analog")}>Analog</Button>
+            )}
+            {showAbout && (
+              <Button onClick={() => router.push("/about")}>About</Button>
+            )}
+            {/* <Button onClick={() => router.push("/blog")}>Blog</Button> */}
+            {mounted && theme && data.darkMode && (
               <Button
-                    onClick={() => window.open("mailto:robyjulian212@gmail.com")}
-                  >
-                    Contact
+                 onClick={() =>
+                        window.open("https://instagram.com/imrobwe")
+                    }
+              >
+                <img
+                  className="h-6"
+                  src={`/images/${theme === "dark" ? "igdark.svg" : "ig.svg"}`}
+                ></img>
               </Button>
-            </div>
-            <div className="col-end-7 col-span-2 ">
-              <Socials/>
-            </div>
+            )}
 
             {/* {mounted && theme && data.darkMode && (
               <Button
@@ -173,26 +171,25 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             )} */}
           </div>
         ):(
-          <div className="flex grid grid-rows-2 grid-flow-col">
-            
-            <div className="flex col-start-1 col-end-7">
-               {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
+          <div className="flex">
+            {showBlog && (
+                <Button onClick={() => router.push("/blog")}>Blog</Button>
               )}
-              {showAbout && (
-                <Button onClick={() => router.push("/about")}>About</Button>
+            {showAbout && (
+              <Button onClick={() => router.push("/about")}>About</Button>
               )}
-              {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-              <Button onClick={() => router.push("/analog")}>Analog</Button>
-              <Button
-                    onClick={() => window.open("mailto:robyjulian212@gmail.com")}
-                  >
-                    Contact
-              </Button>
-            </div>
-            <div className="col-end-7 col-span-2 ">
-              <Socials/>
-            </div>
+              {mounted && theme && data.darkMode && (
+                <Button
+                  onClick={() =>
+                          window.open("https://instagram.com/imrobwe")
+                      }
+                >
+                  <img
+                    className="h-6"
+                    src={`/images/${theme === "dark" ? "igdark.svg" : "ig.svg"}`}
+                  ></img>
+                </Button>
+              )}
 
               {/* {mounted && theme && data.darkMode && (
                 <Button
