@@ -77,10 +77,10 @@ const Blog = ({ posts }) => {
           }`}
         >
           <Header isBlog={true}></Header>
-          <div className="mt-10">
+          <div className="mt-3">
             <h1
               ref={text}
-              className="mx-auto mob:p-2 text-bold text-6xl laptop:text-8xl w-full"
+              className="mx-auto mob:p-2 text-bold text-6xl laptop:text-7xl w-full"
             >
               Blog.
             </h1>
