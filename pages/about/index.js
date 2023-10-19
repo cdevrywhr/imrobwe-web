@@ -1,39 +1,18 @@
 import Head from "next/head";
-import Router, { useRouter } from "next/router";
 import Footer from "../../components/Footer";
 import { useEffect, useRef, useState } from "react";
 import { stagger } from "../../animations";
 import Cursor from "../../components/Cursor";
 import Header from "../../components/Header";
 import data from "../../data/portfolio.json";
-import {useIsomorphicLayoutEffect } from "../../utils";
 
 import Socials from "../../components/Socials";
 
-
-
-const About = ({ posts }) => {
-  const showBlog = useRef(data.showBlog);
-  const text = useRef();
-  const router = useRouter();
-  const [mounted, setMounted] = useState(false);
-
-  useIsomorphicLayoutEffect(() => {
-    stagger(
-      [text.current],
-      { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
-      { y: 0, x: 0, transform: "scale(1)" }
-    );
-    if (showBlog.current) stagger([text.current], { y: 30 }, { y: 0 });
-    else router.push("/");
-  }, []);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+export default function About() {
+  const text = useRef(); 
 
   return (
-    showBlog.current && (
+
       <>
         {data.showCursor && <Cursor />}
         <Head>
@@ -99,8 +78,6 @@ const About = ({ posts }) => {
         <Socials className="mt-10 laptop:mt-5 justify-center" />
         <Footer/>
       </>
-    )
+    
   );
 };
-
-export default About;
