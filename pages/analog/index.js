@@ -1,12 +1,8 @@
 import { useRef } from "react";
 import Header from "../../components/Header";
-import WorkCard from "../../components/WorkCard";
 import Socials from "../../components/Socials";
-import { stagger } from "../../animations";
 import Footer from "../../components/Footer";
 import Head from "next/head";
-import Button from "../../components/Button";
-import Link from "next/link";
 import Cursor from "../../components/Cursor";
 
 // Local Data
