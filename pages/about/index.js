@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Footer from "../../components/Footer";
 import { useEffect, useRef, useState } from "react";
-import { stagger } from "../../animations";
 import Cursor from "../../components/Cursor";
 import Header from "../../components/Header";
 import data from "../../data/portfolio.json";
