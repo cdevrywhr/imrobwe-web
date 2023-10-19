@@ -5,13 +5,10 @@ import yourData from "../../data/portfolio.json";
 
 const Socials = ({ className }) => {
   return (
-    <div className={`${className} flex flex-wrap mob:flex-nowrap link text-center`}>
+    <div className={`${className} flex flex-wrap mob:flex-nowrap link`}>
       {yourData.socials.map((social, index) => (
         <Button key={index} onClick={() => window.open(social.link)}>
-           <img
-                    className="h-4"
-                    src={`${social.icon}`}
-                  ></img>
+          {social.title}
         </Button>
       ))}
     </div>
