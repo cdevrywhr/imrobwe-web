@@ -12,7 +12,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const {theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const { name, showBlog, showResume, showAbout } = data;
+  const { name, showBlog, showResume } = data;
 
   useEffect(() => {
     setTheme("dark")
@@ -82,37 +82,25 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
-                  {showAbout && (
-                    <Button onClick={() => router.push("/about")}>About</Button>
-                  )}
+
+                  <Button onClick={() => router.push("/about")}>About</Button>
                   {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-                  <Button onClick={() => router.push("/analog")}>Analog</Button>
-                  <Button
-                    onClick={() => window.open("mailto:robyjulian212@gmail.com")}
-                  >
-                    Contact
-                  </Button>
+                  {/* <Button onClick={() => router.push("/gear")}>My Gear</Button> */}
+                  {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
+                  <Button onClick={() => window.open("mailto:robyjulian212@gmail.com")}>Contact</Button>
                   <Socials className="mt-3"/>
                 </div>
               ) : (
                 <div className="grid grid-cols-1">
-                  <Button onClick={() => router.push("/")} classes="first:ml-1">
-                    Home
-                  </Button>
+                  <Button onClick={() => router.push("/")} classes="first:ml-1">Home</Button>
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
-                  {showAbout && (
-                    <Button onClick={() => router.push("/about")}>About</Button>
-                  )}
+                  <Button onClick={() => router.push("/about")}>About</Button>
                   {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-                  <Button onClick={() => router.push("/analog")}>Analog</Button>
-                  
-                  <Button
-                    onClick={() => window.open("mailto:robyjulian212@gmail.com")}
-                  >
-                    Contact
-                  </Button>
+                  {/* <Button onClick={() => router.push("/gear")}>My Gear</Button> */}
+                  {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
+                  <Button onClick={() => window.open("mailto:robyjulian212@gmail.com")}>Contact</Button>
                   <Socials className="mt-3"/>
                 </div>
               )}
@@ -138,19 +126,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         {!isBlog ? (
           <div className="flex grid grid-rows-2 grid-flow-col">
             <div className="flex col-start-1 col-end-7">
-               {showBlog && (
+              {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
               )}
-              {showAbout && (
-                <Button onClick={() => router.push("/about")}>About</Button>
-              )}
+              <Button onClick={() => router.push("/about")}>About</Button>
               {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-              <Button onClick={() => router.push("/analog")}>Analog</Button>
-              <Button
-                    onClick={() => window.open("mailto:robyjulian212@gmail.com")}
-                  >
-                    Contact
-              </Button>
+              {/* <Button onClick={() => router.push("/gear")}>My Gear</Button> */}
+              {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
+              <Button onClick={() => window.open("mailto:robyjulian212@gmail.com")}>Contact</Button>
             </div>
             <div className="col-end-7 col-span-2 ">
               <Socials/>
@@ -172,19 +155,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           <div className="flex grid grid-rows-2 grid-flow-col">
             
             <div className="flex col-start-1 col-end-7">
-               {showBlog && (
+              {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
               )}
-              {showAbout && (
-                <Button onClick={() => router.push("/about")}>About</Button>
-              )}
+              <Button onClick={() => router.push("/about")}>About</Button>
               {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-              <Button onClick={() => router.push("/analog")}>Analog</Button>
-              <Button
-                    onClick={() => window.open("mailto:robyjulian212@gmail.com")}
-                  >
-                    Contact
-              </Button>
+              {/* <Button onClick={() => router.push("/gear")}>My Gear</Button> */}
+              {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
+              <Button onClick={() => window.open("mailto:robyjulian212@gmail.com")}>Contact</Button>
             </div>
             <div className="col-end-7 col-span-2 ">
               <Socials/>
