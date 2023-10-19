@@ -98,6 +98,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showAbout && (
                     <Button onClick={() => router.push("/about")}>About</Button>
                   )}
+                  <Button onClick={() => router.push("/analog")}>Analog</Button>
                   <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
@@ -113,6 +114,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showAbout && (
                     <Button onClick={() => router.push("/about")}>About</Button>
                   )}
+                  <Button onClick={() => router.push("/analog")}>Analog</Button>
                   
                   <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
@@ -145,6 +147,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             {showAbout && (
               <Button onClick={() => router.push("/about")}>About</Button>
             )}
+            <Button onClick={() => router.push("/analog")}>Analog</Button>
             {/* <Button onClick={() => router.push("/blog")}>Blog</Button> */}
             {mounted && theme && data.darkMode && (
               <Button
@@ -178,6 +181,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             {showAbout && (
               <Button onClick={() => router.push("/about")}>About</Button>
               )}
+              <Button onClick={() => router.push("/analog")}>Analog</Button>
               {mounted && theme && data.darkMode && (
                 <Button
                   onClick={() =>
