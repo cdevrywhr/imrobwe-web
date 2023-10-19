@@ -6,10 +6,15 @@
 
 * {
   font-family: "Hind";
+  /* color: bisque; */
 }
 
 body {
   @apply dark:bg-black dark:text-white;
+}
+
+p{
+  text-align: justify;
 }
 
 .gradient-circle {
