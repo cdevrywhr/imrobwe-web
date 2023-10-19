@@ -38,7 +38,7 @@ export default function About(){
             <div className="mt-10 laptop:mt-30 tablet:p-0 laptop:p-0 laptop:grid  laptop:grid-cols-3">
               <div className="mt-3 mb-10 laptop:mt-3 grid laptop:grid-cols-1 tablet:grid-cols-1 gap-4">
                   <div className="col-end-7 col-span-2 mr-10">
-                      <img src={`${data.profilepic}`} className="w-auto tablet:h-60 laptop:h-60">
+                      <img src="https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/about/DSC019411x1.jpg" className="w-auto tablet:h-60 laptop:h-60">
                     </img>
                   </div>
               </div>
