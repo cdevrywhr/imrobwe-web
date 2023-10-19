@@ -10,8 +10,8 @@ import data from "../../data/portfolio.json";
 
 export default function Analog() {
   // Ref
-  const workRef = useRef();
-  const aboutRef = useRef();
+  // const workRef = useRef();
+  // const aboutRef = useRef();
 
   // const handleAboutScroll = () => {
   //   window.scrollTo({
