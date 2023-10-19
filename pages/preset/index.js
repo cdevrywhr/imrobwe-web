@@ -1,18 +1,18 @@
 import { useRef } from "react";
-import Header from "../components/Header";
-import WorkCard from "../components/WorkCard";
-import Socials from "../components/Socials";
-import { stagger } from "../animations";
-import Footer from "../components/Footer";
+import Header from "../../components/Header";
+import WorkCard from "../../components/WorkCard";
+import Socials from "../../components/Socials";
+import { stagger } from "../../animations";
+import Footer from "../../components/Footer";
 import Head from "next/head";
-import Button from "../components/Button";
+import Button from "../../components/Button";
 import Link from "next/link";
-import Cursor from "../components/Cursor";
+import Cursor from "../../components/Cursor";
 
 // Local Data
-import data from "../data/portfolio.json";
+import data from "../../data/portfolio.json";
 
-export default function Home() {
+export default function Analog() {
   // Ref
   const workRef = useRef();
   const aboutRef = useRef();
@@ -37,11 +37,13 @@ export default function Home() {
 
       <div className="container mx-auto mb-10">
         <Header/>
-        
+        <div className="text-center">
+            <h1>Mau jualan preset nanti diisi...</h1>
+        </div>
         <div className="mt-10 laptop:mt-30 tablet:p-0 laptop:p-0">
           <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-3 gap-4">
             
-              <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
+              {/* <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
                 {data.projects_1.map((project) => (
                   <WorkCard
                     key={project.id}
@@ -75,7 +77,7 @@ export default function Home() {
                     // onClick={() => window.open(project.url)}
                   />
                 ))}
-              </div>
+              </div> */}
           </div>
         </div>
       </div>

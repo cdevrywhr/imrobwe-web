@@ -8,21 +8,22 @@
    "socials": [
     {
       "id": "1",
-      "title": "Github",
-      "link": "https://github.com/cdevrywhr"
+      "title": "Youtube",
+      "icon": "/images/yt.svg",
+      "link": "https://youtube.com/@robyjulian"
     },
     {
       "id": "2",
-      "title": "LinkedIn",
-      "link": "https://www.linkedin.com/in/chetanverma7/"
+      "title": "Instagram",
+      "icon":"/images/igwhite.svg",
+      "link": "https://www.instagram.com/robyjulian_/"
     },
     {
       "id": "3",
       "title": "Twitter",
+      "icon":"/images/tw.svg",
       "link": "https://twitter.com/_kocaklu"
-    },
-    { "id": "4", "title": "Blog", "link": "https://blog.chetanverma.com/" },
-    { "id": "5", "title": "Email", "link": "mailto:robyjulian212@gmail.com" }
+    }
   ],
   "projects_1": [
     {
