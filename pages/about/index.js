@@ -1,13 +1,9 @@
 import Head from "next/head";
-import Router, { useRouter } from "next/router";
 import Footer from "../../components/Footer";
 import { useEffect, useRef, useState } from "react";
-import { stagger } from "../../animations";
-import Button from "../../components/Button";
 import Cursor from "../../components/Cursor";
 import Header from "../../components/Header";
 import data from "../../data/portfolio.json";
-import { ISOToDate, useIsomorphicLayoutEffect } from "../../utils";
 
 import Socials from "../../components/Socials";
 
@@ -49,15 +45,18 @@ export default function About(){
                     The Man Behind The Gun.
                   </h6>
                   <p>
-                    Roby Julian, dia lahir di Indonesia tepatnya dikota Sungailiat yang terletak pada pulau Bangka Belitung. Dia mendapatkan kamera pertamanya pada tahun 2019 dari hasil menabung. Sejak saat itu dia mencoba untuk menekuni Street Photography, bisa dilihat pada akun Instagramnya. 
+                    Lagi nunggu ide...
+                  </p>
+                  {/* <p>
+                    Roby Julian, dia lahir di Indonesia tepatnya dikota Sungailiat yang terletak pada pulau Bangka Belitung. Dia mendapatkan kamera pertamanya pada tahun 2019 dari menabung. Sejak saat itu dia mencoba untuk menekuni Street Photography, bisa dilihat pada akun Instagramnya. 
                     <br/> 
                     Her authenticity behind the camera brings out the humanity in her subject matter. Paola's ability to transport you directly into a scene is experienced boldly through both her personal and professional work, taking her all around the world. From documenting the energy of Rio de Janeiro during Carnaval to showcasing the Americana charm of the United States' Midwest and leading photography workshops, she has partnered with some of the world's most prominent brands to create and tell stories from her unique visual lens.
                     
                     What once started as a hobby many years ago has transpired into Paola’s truest vocation. As a result, her creative journey has changed her life in unimaginable ways. Storytelling is a key element cemented in Paola's creative vision — something she holds near and dear to her heart.
 
-                  </p>
+                  </p> */}
 
-                  <h5
+                  {/* <h5
                     ref={text2}
                     className="mx-auto mob:p-0 text-bold text-2xl laptop:text-2xl w-full"
                     >
@@ -75,7 +74,7 @@ export default function About(){
                   </h5>
                   <p>
                     Budweiser, American Airlines, Mercedes Benz, Nike, Sony, Adobe, Acura, ESPN, Viking Cruises, Uber, Verizon, StreetEasy, Samsung, among others. 
-                  </p>
+                  </p> */}
               </div>
               
             </div>
