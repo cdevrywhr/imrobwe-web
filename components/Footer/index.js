@@ -27,7 +27,7 @@ const Footer = ({}) => {
         
       </h1> */}
       <p className="mb-20  mt-5 font-small text-sm/[5px] text-center p-1 laptop:p-0">Roby Julian Copyright © All rights reserved.</p>
-      <div className="gradient-circle-bottom"></div>
+      {/* <div className="gradient-circle-bottom"></div> */}
     </>
   );
 };

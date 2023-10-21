@@ -128,7 +128,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         <div>
           <h1
             onClick={() => router.push("/")}
-            className="font-medium font-sans text-center text-xl cursor-pointer mob:p-2 laptop:p-0">
+            className="ml-5 font-medium font-sans text-center text-xl cursor-pointer mob:p-2 laptop:p-0">
           {name}.
           </h1>
         {/* <p className="text-center">ROBWE.</p> */}
