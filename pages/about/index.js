@@ -40,11 +40,11 @@ export default function About(){
               <div className="mt-5 laptop:mt-3 laptop:mr-20 grid laptop:grid-cols-0 col-start-2 col-span-4 gap-5">
                   <h6
                       ref={text1}
-                      className="mx-auto mob:p-0 text-bold text-2xl laptop:text-2xl w-full"
+                      className="mx-auto mob:p-2 text-bold text-2xl laptop:text-2xl w-full"
                       >
                       Harmonizing Moments: Roby Julian's Journey Begins
                       </h6>
-                      <p><br/>
+                      <p class="mob:p-5"><br/>
                       In 2017, Palembang was a city rarely visited by concerts and music festivals. However, that was the first year for a man named Roby Julian, who ventured into the world of concert photography. Roby created unforgettable memories when he borrowed a camera from a friend and attended Bingenfest, one of the rare music festivals in the city.
                       <br/><br/>
                       During that event, he captured the performances of bands such as Mustache and Beard and Dialog Dini Hari. The borrowed camera became a window into the live music world, where every beam of light and musician's expression was captured in the photos he produced.
@@ -57,6 +57,7 @@ export default function About(){
                       <br/><br/>
                       So, this is the story of Roby Julian, a music enthusiast who has turned his love into beautiful art through the world of photography. He continues to explore, chasing irreplaceable moments, and preserving memories that will never fade through his camera lens.             
                       </p>
+
               </div>
               
             </div>
