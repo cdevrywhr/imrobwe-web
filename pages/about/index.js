@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import Footer from "../../components/Footer";
 import { useEffect, useRef, useState } from "react";
 import Cursor from "../../components/Cursor";
@@ -13,6 +14,7 @@ export default function About(){
   const text1 = useRef();
   const text2 = useRef();
   const text3 = useRef();
+
 
   return (
     
@@ -29,6 +31,7 @@ export default function About(){
           }`}
         >
           <Header isBlog={true}></Header>
+
           <div className="mt-5">
             <div className="mt-0 laptop:mt-30 tablet:p-0 laptop:p-0 laptop:grid  laptop:grid-cols-3">
               <div className="mt-0 mb-10 laptop:mt-3 grid laptop:grid-cols-1 tablet:grid-cols-1 gap-4">
