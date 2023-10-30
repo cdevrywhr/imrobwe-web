@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Router, { useRouter } from "next/router";
+import Footer from "../../components/Footer";
 import { useEffect, useRef, useState } from "react";
 import { stagger } from "../../animations";
 import Button from "../../components/Button";
@@ -8,6 +9,8 @@ import Header from "../../components/Header";
 import data from "../../data/portfolio.json";
 import { ISOToDate, useIsomorphicLayoutEffect } from "../../utils";
 import { getAllPosts } from "../../utils/api";
+import Socials from "../../components/Socials";
+
 const Blog = ({ posts }) => {
   const showBlog = useRef(data.showBlog);
   const text = useRef();
@@ -67,16 +70,17 @@ const Blog = ({ posts }) => {
         <Head>
           <title>Blog</title>
         </Head>
+        
         <div
           className={`container mx-auto mb-10 ${
             data.showCursor && "cursor-none"
           }`}
         >
           <Header isBlog={true}></Header>
-          <div className="mt-10">
+          <div className="mt-3">
             <h1
               ref={text}
-              className="mx-auto mob:p-2 text-bold text-6xl laptop:text-8xl w-full"
+              className="mx-auto mob:p-2 text-bold text-6xl laptop:text-7xl w-full"
             >
               Blog.
             </h1>
@@ -116,6 +120,9 @@ const Blog = ({ posts }) => {
             </div>
           </div>
         </div>
+        <Socials className="mt-10 laptop:mt-5 justify-center" />
+        <Footer/>
+        
         {/* {process.env.NODE_ENV === "development" && mounted && (
           <div className="fixed bottom-6 right-6">
             <Button onClick={createBlog} type={"primary"}>

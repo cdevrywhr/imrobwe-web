@@ -6,10 +6,15 @@
 
 * {
   font-family: "Hind";
+  /* color: bisque; */
 }
 
 body {
   @apply dark:bg-black dark:text-white;
+}
+
+p{
+  text-align: justify;
 }
 
 .gradient-circle {
@@ -18,7 +23,7 @@ body {
   z-index: 100;
   top: -30px;
   height: 40px;
-  width: 100vw;
+  width: 90vw;
   opacity: 0.5;
   filter: blur(40px);
   background: radial-gradient(
@@ -36,11 +41,11 @@ body {
   width: 100vw;
   opacity: 0.5;
   filter: blur(40px);
-  /* background: radial-gradient(
+  background: radial-gradient(
     circle,
       rgb(107, 175, 248) 0%,
-      rgba(107, 107, 248, 0.8) 100%
-  ); */
+      rgba(108, 108, 231, 0.8) 100%
+  );
 }
 
 .gradient-shadow:hover::before {
