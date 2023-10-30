@@ -11,6 +11,7 @@ import BlogEditor from "../../components/BlogEditor";
 import { useRouter } from "next/router";
 import Cursor from "../../components/Cursor";
 import data from "../../data/portfolio.json";
+import Socials from "@/components/Socials";
 
 const BlogPost = ({ post }) => {
   const [showEditor, setShowEditor] = useState(false);
@@ -57,6 +58,7 @@ const BlogPost = ({ post }) => {
         </div>
         <ContentSection content={post.content}></ContentSection>
         <Footer />
+        <Socials/>
       </div>
       {/* {process.env.NODE_ENV === "development" && (
         <div className="fixed bottom-6 right-6">
