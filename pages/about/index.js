@@ -21,7 +21,7 @@ export default function About(){
       <>
         {data.showCursor && <Cursor />}
         <Head>
-          <title>About</title>
+          <title>{data.name} - About</title>
           
         </Head>
        
@@ -35,12 +35,12 @@ export default function About(){
           <div className="mt-5">
             <div className="mt-0 laptop:mt-30 tablet:p-0 laptop:p-0 laptop:grid  laptop:grid-cols-3">
               <div className="mt-0 mb-10 laptop:mt-3 grid laptop:grid-cols-1 tablet:grid-cols-1 gap-4">
-                  <div className="col-end-7 col-span-2 mr-10">
-                      <img src={`${data.profilepic}`} className="w-auto tablet:h-60 laptop:h-60">
+                  <div className="col-end-5 col-span-2 mr-10 justify-center">
+                      <img src={`${data.profilepic}`} className="w-auto tablet:h-50 laptop:h-60 ">
                     </img>
                   </div>
               </div>
-              <div className="mt-5 laptop:mt-3 laptop:mr-20 grid laptop:grid-cols-0 col-start-2 col-span-4 gap-5">
+              <div className="mt-5 laptop:mt-2 laptop:mr-20 grid laptop:grid-cols-0 col-start-2 col-span-4 gap-5">
                   <h6
                       ref={text1}
                       className="mx-auto mob:p-2 text-bold text-2xl laptop:text-2xl w-full"
@@ -52,7 +52,7 @@ export default function About(){
                       <br/><br/>
                       During that event, he captured the performances of bands such as Mustache and Beard and Dialog Dini Hari. The borrowed camera became a window into the live music world, where every beam of light and musician's expression was captured in the photos he produced.
                       <br/><br/>
-                      2019 marked the beginning of his personal journey into photography. Roby decided to buy his first camera, entering the realm of street photography, and delving deeper into the art of capturing moments. His work can be found on his personal Instagram account, where he shares captivating portraits he captures on his journey. <a href="https://www.instagram.com/robyjulian_/">Click Here.</a>
+                      2019 marked the beginning of his personal journey into photography. Roby decided to buy his first camera, entering the realm of street photography, and delving deeper into the art of capturing moments. His work can be found on his personal Instagram account <a href="https://www.instagram.com/robyjulian_/">(Click Here.)</a>, where he shares captivating portraits he captures on his journey. 
                       <br/>  <br/>
                       In 2023, Roby made a significant decision to move to Jakarta, the vibrant capital of music and arts. This decision was made with the aim of gaining more opportunities to attend concerts and photograph musicians. He wanted to experience the pulsating beat of the music scene more intensely and embrace it through the lens of his camera.
                       <br/><br/>

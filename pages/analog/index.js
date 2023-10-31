@@ -30,7 +30,7 @@ export default function Analog() {
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
       {data.showCursor && <Cursor />}
       <Head>
-        <title>{data.name}</title>
+        <title>{data.name} - Analog</title>
       </Head>
 
       <div className="gradient-circle"></div>
@@ -47,7 +47,7 @@ export default function Analog() {
               />
             )}
           </Carousel>
-          <div className="mt-10 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-3 gap-4">
+          {/* <div className="mt-10 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-3 gap-4">
             
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
                 {analog.first.map((project) => (
@@ -84,7 +84,7 @@ export default function Analog() {
                   />
                 ))}
               </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <Socials className="mt-10 laptop:mt-5 justify-center" />

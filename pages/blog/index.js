@@ -68,7 +68,7 @@ const Blog = ({ posts }) => {
       <>
         {data.showCursor && <Cursor />}
         <Head>
-          <title>Blog</title>
+          <title>{data.name} - Blog</title>
         </Head>
         
         <div
