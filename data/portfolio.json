@@ -2,6 +2,7 @@
   "name": "IMROBWE",
   "showBlog":true,
   "showAbout":true,
+  "showAnalog":true,
   "showCursor":true,
   "darkMode":true,
   "profilepic": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/about/DSC019411x1.jpg",
@@ -25,198 +26,254 @@
       "link": "https://twitter.com/_kocaklu"
     }
   ],
-  "projects_1": [
-    {
-      "id": "1",
-      "title": "Sajama Cut",
-      "description": "Sajama Cut at WTF23",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo1.jpg",
-      "url": ""
-    },
-    {
-      "id": "2",
-      "title": "Armand Maulana Gigi",
-      "description": "Gigi at Pertamina Eco Fest 2022",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo2.jpg",
-      "url": ""
-    },
-    {
-      "id": "3",
-      "title": "The Panturas",
-      "description": "Design",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo3.jpg",
-      "url": ""
-    },
-    {
-      "id": "4",
-      "title": "Project Four",
-      "description": "Marketing",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo4.jpg",
-      "url": ""
-    },
-    {
-      "id": "5",
-      "title": "Project Five",
-      "description": "Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo5.jpg",
-      "url": ""
-    },
-    {
-      "id": "6",
-      "title": "Project Six",
-      "description": "Design & Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo6.jpg",
-      "url": ""
-    },
-    {
-      "id": "7",
-      "title": "Project Six",
-      "description": "Design & Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo7.jpg",
-      "url": ""
-    },
-    {
-      "id": "8",
-      "title": "Project Six",
-      "description": "Design & Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo8.jpg",
-      "url": ""
-    },
-    {
-      "id": "9",
-      "title": "Project Six",
-      "description": "Design & Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo9.jpg",
-      "url": ""
+  "analog":{
+      "first":[
+        {
+          "id": "1",
+          "title": "Yogya1",
+          "link": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/analog/yogya1.jpg"
+        },
+        {
+          "id": "2",
+          "title": "Yogya2",
+          "link": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/analog/yogya2.jpg"
+        },
+        {
+          "id": "3",
+          "title": "Yogya3",
+          "link": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/analog/yogya3.jpg"
+        }
+      ],
+      "second":[
+        {
+          "id": "1",
+          "title": "Yogya1",
+          "link": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/analog/yogya1.jpg"
+        },
+        {
+          "id": "2",
+          "title": "Yogya2",
+          "link": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/analog/yogya2.jpg"
+        },
+        {
+          "id": "3",
+          "title": "Yogya3",
+          "link": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/analog/yogya3.jpg"
+        }
+      ],
+      "third":[
+        {
+          "id": "1",
+          "title": "Yogya1",
+          "link": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/analog/yogya1.jpg"
+        },
+        {
+          "id": "2",
+          "title": "Yogya2",
+          "link": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/analog/yogya2.jpg"
+        },
+        {
+          "id": "3",
+          "title": "Yogya3",
+          "link": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/analog/yogya3.jpg"
+        }
+      ]
     }
-  ],
-  "projects_2": [
-    {
-      "id": "1",
-      "title": "Sajama Cut",
-      "description": "Sajama Cut at WTF23",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/1.jpg",
-      "url": ""
-    },
-    {
-      "id": "2",
-      "title": "Armand Maulana Gigi",
-      "description": "Gigi at Pertamina Eco Fest 2022",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/2.jpg",
-      "url": ""
-    },
-    {
-      "id": "3",
-      "title": "The Panturas",
-      "description": "Design",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/3.jpg",
-      "url": ""
-    },
-    {
-      "id": "4",
-      "title": "Project Four",
-      "description": "Marketing",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/4.jpg",
-      "url": ""
-    },
-    {
-      "id": "5",
-      "title": "Project Five",
-      "description": "Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/5.jpg",
-      "url": ""
-    },
-    {
-      "id": "6",
-      "title": "Project Six",
-      "description": "Design & Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/6.jpg",
-      "url": ""
-    },
-    {
-      "id": "7",
-      "title": "Project Six",
-      "description": "Design & Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/7.jpg",
-      "url": ""
-    },
-    {
-      "id": "8",
-      "title": "Project Six",
-      "description": "Design & Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/8.jpg",
-      "url": ""
-    },
-    {
-      "id": "9",
-      "title": "Project Six",
-      "description": "Design & Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/9.jpg",
-      "url": ""
-    }
-  ],
-  "projects_3": [
-   {
-      "id": "1",
-      "title": "Sajama Cut",
-      "description": "Sajama Cut at WTF23",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/1.jpg",
-      "url": ""
-    },
-    {
-      "id": "2",
-      "title": "Armand Maulana Gigi",
-      "description": "Gigi at Pertamina Eco Fest 2022",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/2.jpg",
-      "url": ""
-    },
-    {
-      "id": "3",
-      "title": "The Panturas",
-      "description": "Design",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/3.jpg",
-      "url": ""
-    },
-    {
-      "id": "4",
-      "title": "Project Four",
-      "description": "Marketing",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/4.jpg",
-      "url": ""
-    },
-    {
-      "id": "5",
-      "title": "Project Five",
-      "description": "Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/5.jpg",
-      "url": ""
-    },
-    {
-      "id": "6",
-      "title": "Project Six",
-      "description": "Design & Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/6.jpg",
-      "url": ""
-    },
-    {
-      "id": "7",
-      "title": "Project Six",
-      "description": "Design & Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/7.jpg"
-    },
-    {
-      "id": "8",
-      "title": "Project Six",
-      "description": "Design & Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/8.jpg",
-      "url": ""
-    },
-    {
-      "id": "9",
-      "title": "Project Six",
-      "description": "Design & Development",
-      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/9.jpg",
-      "url": ""
-    }
-  ]
+  ,
+  "concert": {
+      "first":[
+        {
+          "id": "1",
+          "title": "Sajama Cut",
+          "description": "Sajama Cut at WTF23",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo1.jpg",
+          "url": ""
+        },
+        {
+          "id": "2",
+          "title": "Armand Maulana Gigi",
+          "description": "Gigi at Pertamina Eco Fest 2022",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo2.jpg",
+          "url": ""
+        },
+        {
+          "id": "3",
+          "title": "The Panturas",
+          "description": "Design",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo3.jpg",
+          "url": ""
+        },
+        {
+          "id": "4",
+          "title": "Project Four",
+          "description": "Marketing",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo4.jpg",
+          "url": ""
+        },
+        {
+          "id": "5",
+          "title": "Project Five",
+          "description": "Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo5.jpg",
+          "url": ""
+        },
+        {
+          "id": "6",
+          "title": "Project Six",
+          "description": "Design & Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo6.jpg",
+          "url": ""
+        },
+        {
+          "id": "7",
+          "title": "Project Six",
+          "description": "Design & Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo7.jpg",
+          "url": ""
+        },
+        {
+          "id": "8",
+          "title": "Project Six",
+          "description": "Design & Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo8.jpg",
+          "url": ""
+        },
+        {
+          "id": "9",
+          "title": "Project Six",
+          "description": "Design & Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/first/photo9.jpg",
+          "url": ""
+        }
+      ],
+      "second":[
+        {
+          "id": "1",
+          "title": "Sajama Cut",
+          "description": "Sajama Cut at WTF23",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/1.jpg",
+          "url": ""
+        },
+        {
+          "id": "2",
+          "title": "Armand Maulana Gigi",
+          "description": "Gigi at Pertamina Eco Fest 2022",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/2.jpg",
+          "url": ""
+        },
+        {
+          "id": "3",
+          "title": "The Panturas",
+          "description": "Design",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/3.jpg",
+          "url": ""
+        },
+        {
+          "id": "4",
+          "title": "Project Four",
+          "description": "Marketing",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/4.jpg",
+          "url": ""
+        },
+        {
+          "id": "5",
+          "title": "Project Five",
+          "description": "Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/5.jpg",
+          "url": ""
+        },
+        {
+          "id": "6",
+          "title": "Project Six",
+          "description": "Design & Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/6.jpg",
+          "url": ""
+        },
+        {
+          "id": "7",
+          "title": "Project Six",
+          "description": "Design & Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/7.jpg",
+          "url": ""
+        },
+        {
+          "id": "8",
+          "title": "Project Six",
+          "description": "Design & Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/8.jpg",
+          "url": ""
+        },
+        {
+          "id": "9",
+          "title": "Project Six",
+          "description": "Design & Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/second/9.jpg",
+          "url": ""
+        }
+      ],
+      "third":[
+        {
+          "id": "1",
+          "title": "Sajama Cut",
+          "description": "Sajama Cut at WTF23",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/1.jpg",
+          "url": ""
+        },
+        {
+          "id": "2",
+          "title": "Armand Maulana Gigi",
+          "description": "Gigi at Pertamina Eco Fest 2022",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/2.jpg",
+          "url": ""
+        },
+        {
+          "id": "3",
+          "title": "The Panturas",
+          "description": "Design",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/3.jpg",
+          "url": ""
+        },
+        {
+          "id": "4",
+          "title": "Project Four",
+          "description": "Marketing",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/4.jpg",
+          "url": ""
+        },
+        {
+          "id": "5",
+          "title": "Project Five",
+          "description": "Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/5.jpg",
+          "url": ""
+        },
+        {
+          "id": "6",
+          "title": "Project Six",
+          "description": "Design & Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/6.jpg",
+          "url": ""
+        },
+        {
+          "id": "7",
+          "title": "Project Six",
+          "description": "Design & Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/7.jpg"
+        },
+        {
+          "id": "8",
+          "title": "Project Six",
+          "description": "Design & Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/8.jpg",
+          "url": ""
+        },
+        {
+          "id": "9",
+          "title": "Project Six",
+          "description": "Design & Development",
+          "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/portofolio/third/9.jpg",
+          "url": ""
+        }
+      ]
+  }
 }

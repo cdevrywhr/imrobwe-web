@@ -16,6 +16,7 @@ export default function Home() {
   // Ref
   const workRef = useRef();
   const aboutRef = useRef();
+  const concert = data.concert
 
   // const handleAboutScroll = () => {
   //   window.scrollTo({
@@ -42,7 +43,7 @@ export default function Home() {
           <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-3 gap-4">
             
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
-                {data.projects_1.map((project) => (
+                {concert.first.map((project) => (
                   <WorkCard
                     key={project.id}
                     img={project.imageSrc}
@@ -54,7 +55,7 @@ export default function Home() {
               </div>
 
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
-                {data.projects_2.map((project) => (
+                {concert.second.map((project) => (
                   <WorkCard
                     key={project.id}
                     img={project.imageSrc}
@@ -66,7 +67,7 @@ export default function Home() {
               </div>
 
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
-                {data.projects_3.map((project) => (
+                {concert.third.map((project) => (
                   <WorkCard
                     key={project.id}
                     img={project.imageSrc}

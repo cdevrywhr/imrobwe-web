@@ -57,8 +57,9 @@ const BlogPost = ({ post }) => {
           </h2>
         </div>
         <ContentSection content={post.content}></ContentSection>
+        <Socials className="mt-10 laptop:mt-5 justify-center" />
         <Footer />
-        <Socials/>
+        
       </div>
       {/* {process.env.NODE_ENV === "development" && (
         <div className="fixed bottom-6 right-6">

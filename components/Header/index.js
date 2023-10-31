@@ -12,7 +12,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const {theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const { name, showBlog, showResume, showAbout } = data;
+  const { name, showBlog, showResume, showAbout, showAnalog } = data;
 
   useEffect(() => {
     setTheme("dark")
@@ -72,7 +72,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             </div>
             <Popover.Panel
               className={`absolute right-0 z-10 w-11/12 p-4 ${
-                theme === "dark" ? "bg-slate-800" : "bg-white"
+                theme === "dark" ? "bg-blue-gray-900" : "bg-gray-900"
               } shadow-md rounded-md`}
             >
               
@@ -86,7 +86,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     <Button onClick={() => router.push("/about")}>About</Button>
                   )}
                   {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-                  {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
+                  <Button onClick={() => router.push("/analog")}>Analog</Button>
                   <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
@@ -106,7 +106,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     <Button onClick={() => router.push("/about")}>About</Button>
                   )}
                   {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-                  {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
+                  <Button onClick={() => router.push("/analog")}>Analog</Button>
                   
                   <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
@@ -145,7 +145,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 <Button onClick={() => router.push("/about")}>About</Button>
               )}
               {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-              {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
+              <Button onClick={() => router.push("/analog")}>Analog</Button>
               <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
@@ -179,7 +179,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 <Button onClick={() => router.push("/about")}>About</Button>
               )}
               {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-              {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
+              <Button onClick={() => router.push("/analog")}>Analog</Button>
               <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
