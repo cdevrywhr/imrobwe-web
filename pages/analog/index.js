@@ -30,7 +30,7 @@ export default function Analog() {
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
       {data.showCursor && <Cursor />}
       <Head>
-        <title>{data.name} - Analog</title>
+        <title>{data.name}</title>
       </Head>
 
       <div className="gradient-circle"></div>
@@ -38,11 +38,11 @@ export default function Analog() {
       <div className="container mx-auto mb-10">
         <Header isBlog={true}></Header>
         <div className="mt-10 laptop:mt-30 tablet:p-0 laptop:p-0">
-          <Carousel transition={{ duration: 2 }} className="rounded-xl">
+          <Carousel transition={{ duration: 2 }} className="w-70% rounded-xl">
             {data.analog.first.map((photo) =>
               <img
                   src={photo.link}
-                  alt="image 1"
+                  alt="carousel"
                   className="h-full w-full object-cover"
               />
             )}

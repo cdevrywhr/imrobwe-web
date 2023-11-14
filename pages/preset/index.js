@@ -34,7 +34,6 @@ export default function Analog() {
 
       <div className="gradient-circle"></div>
       
-
       <div className="container mx-auto mb-10">
         <Header/>
         <div className="text-center">

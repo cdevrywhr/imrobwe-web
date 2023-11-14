@@ -21,7 +21,7 @@ export default function About(){
       <>
         {data.showCursor && <Cursor />}
         <Head>
-          <title>{data.name} - About</title>
+          <title>{data.name}</title>
           
         </Head>
        
