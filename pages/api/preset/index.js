@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import { getRandomImage } from "../../../utils";
 
 export default function handler(req, res) {
-  const postsfolder = join(process.cwd(), `/_posts/${uuidv4()}.md`);
+  const postsfolder = join(process.cwd(), `/_preset/${uuidv4()}.md`);
   if (process.env.NODE_ENV === "development") {
     if (req.method === "POST") {
       const data = matter.stringify("# New Blog", {
@@ -22,7 +22,7 @@ export default function handler(req, res) {
       res.status(200).json({ status: "CREATED" });
     }
     if (req.method === "DELETE") {
-      const deleteFile = join(process.cwd(), `/_posts/${req.body.slug}.md`);
+      const deleteFile = join(process.cwd(), `/_preset/${req.body.slug}.md`);
       fs.unlinkSync(deleteFile);
       res.status(200).json({ status: "DONE" });
     }

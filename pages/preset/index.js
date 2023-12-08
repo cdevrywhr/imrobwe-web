@@ -1,88 +1,165 @@
-import { useRef } from "react";
-import Header from "../../components/Header";
-import WorkCard from "../../components/WorkCard";
-import Socials from "../../components/Socials";
-import { stagger } from "../../animations";
-import Footer from "../../components/Footer";
 import Head from "next/head";
+import Router, { useRouter } from "next/router";
+import Footer from "../../components/Footer";
+import { useEffect, useRef, useState } from "react";
+import { stagger } from "../../animations";
 import Button from "../../components/Button";
-import Link from "next/link";
 import Cursor from "../../components/Cursor";
-
-// Local Data
+import Header from "../../components/Header";
 import data from "../../data/portfolio.json";
+import { ISOToDate, useIsomorphicLayoutEffect } from "../../utils";
+import { getAllPreset } from "../../utils/api";
+import Socials from "../../components/Socials";
 
-export default function Analog() {
-  // Ref
-  const workRef = useRef();
-  const aboutRef = useRef();
+const Preset = ({ presets }) => {
+  const showBlog = useRef(data.showBlog);
+  const text = useRef();
+  const router = useRouter();
+  const [mounted, setMounted] = useState(false);
 
-  // const handleAboutScroll = () => {
-  //   window.scrollTo({
-  //     top: aboutRef.current.offsetTop,
-  //     left: 0,
-  //     behavior: "smooth",
-  //   });
-  // };
+  useIsomorphicLayoutEffect(() => {
+    stagger(
+      [text.current],
+      { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
+      { y: 0, x: 0, transform: "scale(1)" }
+    );
+    if (showBlog.current) stagger([text.current], { y: 30 }, { y: 0 });
+    else router.push("/");
+  }, []);
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const createBlog = () => {
+    if (process.env.NODE_ENV === "development") {
+      fetch("/api/preset", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }).then(() => {
+        router.reload(window.location.pathname);
+      });
+    } else {
+      alert("This thing only works in development mode.");
+    }
+  };
+
+  const deleteBlog = (slug) => {
+    if (process.env.NODE_ENV === "development") {
+      fetch("/api/blog", {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          slug,
+        }),
+      }).then(() => {
+        router.reload(window.location.pathname);
+      });
+    } else {
+      alert("This thing only works in development mode.");
+    }
+  };
   return (
-    <div className={`relative ${data.showCursor && "cursor-none"}`}>
-      {data.showCursor && <Cursor />}
-      <Head>
-        <title>{data.name}</title>
-      </Head>
+    showBlog.current && (
+      <>
+        {data.showCursor && <Cursor />}
+        <Head>
+          <title>{data.name}</title>
+        </Head>
+        
+        <div
+          className={`container mx-auto mb-10 ${
+            data.showCursor && "cursor-none"
+          }`}
+        >
+          <Header isBlog={true}></Header>
+          <div className="mt-3">
+            <h1
+              ref={text}
+              className="mx-auto mob:p-2 text-bold text-4xl laptop:text-7xl w-full"
+            >
+              Preset.
+            </h1>
+            <div className="mt-10 grid grid-cols-1 mob:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 justify-between gap-10">
+              {presets &&
+                presets.map((post) => (
+                  <div
+                    className="cursor-pointer relative desabled"
+                    key={post.slug}
+                    onClick={() => Router.push(`/preset/${post.slug}`)}
+                  >
+                    <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
+                      
+                      <img class="rounded-lg" src={post.image} alt={post.title}/>
+                  
+                      <figcaption class="absolute px-5 text-3xl text-white bottom-6">
+                          <h2>{post.title}</h2>
+                      </figcaption>
+                    </figure>
 
-      <div className="gradient-circle"></div>
-      
-      <div className="container mx-auto mb-10">
-        <Header/>
-        <div className="text-center">
-            <h1>Mau jualan preset nanti diisi...</h1>
-        </div>
-        <div className="mt-10 laptop:mt-30 tablet:p-0 laptop:p-0">
-          <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-3 gap-4">
-            
-              {/* <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
-                {data.projects_1.map((project) => (
-                  <WorkCard
-                    key={project.id}
-                    img={project.imageSrc}
-                    // name={project.title}
-                    // description={project.description}
-                    // onClick={() => window.open(project.url)}
-                  />
-                ))}
-              </div>
+                    {/* <img
+                      className="w-full h-full rounded-lg shadow-lg object-cover"
+                      src={post.image}
+                      alt={post.title}
+                    ></img>
+                    <h2 className="mt-5 text-4xl">{post.title}</h2> */}
+                    {/* <p className="mt-2 opacity-50 text-lg text-justify">{post.preview}</p> */}
 
-              <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
-                {data.projects_2.map((project) => (
-                  <WorkCard
-                    key={project.id}
-                    img={project.imageSrc}
-                    // name={project.title}
-                    // description={project.description}
-                    // onClick={() => window.open(project.url)}
-                  />
+                    {/* <span className="text-sm mt-5 opacity-25">
+                      {ISOToDate(post.date)}
+                    </span> */}
+                    {/* {process.env.NODE_ENV === "development" && mounted && (
+                      <div className="absolute top-0 right-0">
+                        <Button
+                          onClick={(e) => {
+                            deleteBlog(post.slug);
+                            e.stopPropagation();
+                          }}
+                          type={"primary"}
+                        >
+                          Delete
+                        </Button>
+                      </div>
+                    )} */}
+                  </div>
                 ))}
-              </div>
-
-              <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
-                {data.projects_3.map((project) => (
-                  <WorkCard
-                    key={project.id}
-                    img={project.imageSrc}
-                    // name={project.title}
-                    // description={project.description}
-                    // onClick={() => window.open(project.url)}
-                  />
-                ))}
-              </div> */}
+            </div>
           </div>
         </div>
-      </div>
-      <Socials className="mt-10 laptop:mt-5 justify-center" />
-      <Footer/>
-    </div>
-    
+        <Socials className="mt-10 laptop:mt-5 justify-center" />
+        <Footer/>
+        
+        {/* {process.env.NODE_ENV === "development" && mounted && (
+          <div className="fixed bottom-6 right-6">
+            <Button onClick={createBlog} type={"primary"}>
+              Add New Post +{" "}
+            </Button>
+          </div>
+        )} */}
+      </>
+    )
   );
+};
+
+export async function getStaticProps() {
+  const presets = getAllPreset([
+    "slug",
+    "title",
+    "image",
+    "preview",
+    "author",
+    "date",
+  ]);
+
+  return {
+    props: {
+      presets: [...presets],
+    },
+  };
 }
+
+export default Preset;

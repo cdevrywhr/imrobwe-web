@@ -13,6 +13,11 @@ body {
   @apply dark:bg-black dark:text-white;
 }
 
+li{
+  color: rgb(245, 246, 247);
+  font-family: 'Courier New', Courier, monospace;
+}
+
 p{
   text-align: justify;
 }

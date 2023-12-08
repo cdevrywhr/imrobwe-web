@@ -17,6 +17,10 @@ export default withMT({
       laptopl: "1440px",
     },
     extend: {},
+    fontFamily: {
+      sans: ["Raleway", "sans-serif"],
+      serif: ["Courier New", "serif"],
+    },
   },
   plugins: [],
 });

@@ -3,7 +3,7 @@
 /* Markdown Container */
 
 .markdown-class {
-  @apply mt-5 p-5;
+  @apply mt-0 p-5;
 }
 
 /* Headings */
@@ -12,7 +12,7 @@
   @apply mt-5 text-3xl;
 }
 .markdown-class h2 {
-  @apply mt-5 text-2xl;
+  @apply mt-0 text-2xl;
 }
 .markdown-class h3 {
   @apply mt-5 text-xl;

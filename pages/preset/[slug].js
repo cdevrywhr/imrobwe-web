@@ -1,19 +1,21 @@
 import React, { useRef, useState } from "react";
-import { getPostBySlug, getAllPosts } from "../../utils/api";
+import { getPresetBySlug, getAllPreset } from "../../utils/api";
 import Header from "../../components/Header";
 import ContentSection from "../../components/ContentSection";
 import Footer from "../../components/Footer";
 import Head from "next/head";
 import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
-import Button from "../../components/Button";
-import BlogEditor from "../../components/BlogEditor";
 import { useRouter } from "next/router";
 import Cursor from "../../components/Cursor";
 import data from "../../data/portfolio.json";
 import Socials from "../../components/Socials";
+import PresetInfo from "../../components/PresetInfo";
+import Link from "next/link";
+import { Button } from "@material-tailwind/react";
 
-const BlogPost = ({ post }) => {
+
+const PresetPost = ({ post }) => {
   const [showEditor, setShowEditor] = useState(false);
   const textOne = useRef();
   const textTwo = useRef();
@@ -26,7 +28,7 @@ const BlogPost = ({ post }) => {
   return (
     <>
       <Head>
-        <title>{"Blog - " + post.title}</title>
+        <title>{"Preset - " + post.title}</title>
         <meta name="description" content={post.preview} />
       </Head>
       {data.showCursor && <Cursor />}
@@ -39,8 +41,8 @@ const BlogPost = ({ post }) => {
         <Header isBlog={true} />
         <div className="mt-10 flex flex-col">
           <img
-            className="w-full h-96 rounded-lg shadow-lg object-cover"
-            src={post.image}
+            className="w-full h-auto-full rounded-lg shadow-lg object-cover"
+            src={post.header}
             alt={post.title}
           ></img>
           <h1
@@ -49,15 +51,37 @@ const BlogPost = ({ post }) => {
           >
             {post.title}
           </h1>
-          <h2
+          {/* <h2
             ref={textTwo}
             className="mt-2 text-xl max-w-4xl text-darkgray opacity-50"
           >
             {post.tagline}
-          </h2>
+          </h2> */}
         </div>
-        <ContentSection content={post.content}></ContentSection>
-        <Socials className="mt-10 laptop:mt-5 justify-center" />
+
+        <div className="mt-10 grid grid-cols-1 mob:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2 justify-between gap-10">
+          <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
+            <ContentSection content={post.content}></ContentSection>
+          </div>
+          <div className="mt-3 laptop:mt-20 grid grid-cols-1 tablet:grid-cols-1 gap-4">
+            <img src={`${post.image}`} className="w-auto tablet:h-50 laptop:h-60 "/>
+          </div>
+          {/* <div className="mt-0 laptop:mt-20 laptop:mr-20 grid laptop:grid-cols-1 col-start-2 col-span-4 gap-10 mr-20">
+                  <div className="col-end-5 col-span-2 mr-0 justify-center">
+                      
+                  </div>
+            </div> */}
+        </div>
+ 
+        <div className=" mt-10 justify-center flex flex-wrap mob:flex-nowrap link text-center" >
+          {/* <Link href={`${post.url}`}> */}
+            <Button ripple={true} variant="outlined" color="white">Download</Button>
+          {/* </Link> */}
+        </div>
+        
+        <PresetInfo />
+
+        <Socials className="mt-10 laptop:mt-10 justify-center" />
         <Footer />
         
       </div>
@@ -81,7 +105,7 @@ const BlogPost = ({ post }) => {
 };
 
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, [
+  const post = getPresetBySlug(params.slug, [
     "date",
     "slug",
     "preview",
@@ -89,6 +113,8 @@ export async function getStaticProps({ params }) {
     "tagline",
     "preview",
     "image",
+    "header",
+    "url",
     "content",
   ]);
 
@@ -102,7 +128,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(["slug"]);
+  const posts = getAllPreset(["slug"]);
 
   return {
     paths: posts.map((post) => {
@@ -115,4 +141,4 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
-export default BlogPost;
+export default PresetPost;

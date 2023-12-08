@@ -1,4 +1,5 @@
 {
+  "logo": "ⲒⲘꞄⲞⲂⲰⲈ",
   "name": "IMROBWE",
   "showBlog":true,
   "showAbout":true,
@@ -6,7 +7,30 @@
   "showCursor":true,
   "darkMode":true,
   "profilepic": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/about/DSC019411x1.jpg",
-   "socials": [
+  "preset": [
+    {
+      "id": "1",
+      "title": "BNW Collection",
+      "description": "Black and white preset made with lightroom.",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/preset/BNWCollection.jpg",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "BNW Collection",
+      "description": "Black and white preset made with lightroom.",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/preset/BNWCollection.jpg",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "BNW Collection",
+      "description": "Black and white preset made with lightroom.",
+      "imageSrc": "https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/preset/BNWCollection.jpg",
+      "url": ""
+    }
+  ],
+  "socials": [
     {
       "id": "1",
       "title": "Youtube",

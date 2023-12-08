@@ -12,7 +12,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const {theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const { name, showBlog, showResume, showAbout, showAnalog } = data;
+  const { logo ,name, showBlog, showResume, showAbout, showAnalog } = data;
 
   useEffect(() => {
     setTheme("dark")
@@ -28,9 +28,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             <div className="flex items-center justify-between p-2 laptop:p-0">
               <h1
                 onClick={() => router.push("/")}
-                className="font-medium  p-2 laptop:p-0 link"
+                className="font-medium font-sans p-2 laptop:p-0 link"
               >
-                {name}.
+                {logo}.
               </h1>
               
               <div className="flex items-center"> 
@@ -85,8 +85,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showAbout && (
                     <Button onClick={() => router.push("/about")}>About</Button>
                   )}
-                  {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-                  <Button onClick={() => router.push("/analog")}>Analog</Button>
+                  <Button onClick={() => router.push("/preset")}>Preset</Button>
+                  {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
                   <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
@@ -105,9 +105,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showAbout && (
                     <Button onClick={() => router.push("/about")}>About</Button>
                   )}
-                  {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-                  <Button onClick={() => router.push("/analog")}>Analog</Button>
-                  
+                  <Button onClick={() => router.push("/preset")}>Preset</Button>
+                  {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
                   <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
@@ -128,8 +127,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         <div>
           <h1
             onClick={() => router.push("/")}
-            className="ml-5 font-medium font-sans text-center text-xl cursor-pointer mob:p-2 laptop:p-0">
-          {name}.
+            className="ml-5 font-medium text-center text-xl cursor-pointer mob:p-2 laptop:p-0">
+          {logo}.
           </h1>
         {/* <p className="text-center">ROBWE.</p> */}
         </div>
@@ -144,8 +143,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               {showAbout && (
                 <Button onClick={() => router.push("/about")}>About</Button>
               )}
-              {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-              <Button onClick={() => router.push("/analog")}>Analog</Button>
+              <Button onClick={() => router.push("/preset")}>Preset</Button>
+              {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
               <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
@@ -178,8 +177,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               {showAbout && (
                 <Button onClick={() => router.push("/about")}>About</Button>
               )}
-              {/* <Button onClick={() => router.push("/preset")}>Preset</Button> */}
-              <Button onClick={() => router.push("/analog")}>Analog</Button>
+              <Button onClick={() => router.push("/preset")}>Preset</Button>
+              {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
               <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
