@@ -10,6 +10,7 @@ import data from "../../data/portfolio.json";
 import { ISOToDate, useIsomorphicLayoutEffect } from "../../utils";
 import { getAllPreset } from "../../utils/api";
 import Socials from "../../components/Socials";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const Preset = ({ presets }) => {
   const showBlog = useRef(data.showBlog);
@@ -132,7 +133,7 @@ const Preset = ({ presets }) => {
         </div>
         <Socials className="mt-10 laptop:mt-5 justify-center" />
         <Footer/>
-        
+        <SpeedInsights/>
         {/* {process.env.NODE_ENV === "development" && mounted && (
           <div className="fixed bottom-6 right-6">
             <Button onClick={createBlog} type={"primary"}>

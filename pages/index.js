@@ -8,6 +8,7 @@ import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -82,6 +83,7 @@ export default function Home() {
       </div>
       <Socials className="mt-10 laptop:mt-5 justify-center" />
       <Footer/>
+      <SpeedInsights/>
     </div>
     
   );

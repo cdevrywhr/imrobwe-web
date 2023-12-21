@@ -12,6 +12,7 @@ import { useRouter } from "next/router";
 import Cursor from "../../components/Cursor";
 import data from "../../data/portfolio.json";
 import Socials from "../../components/Socials";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const BlogPost = ({ post }) => {
   const [showEditor, setShowEditor] = useState(false);
@@ -59,6 +60,7 @@ const BlogPost = ({ post }) => {
         <ContentSection content={post.content}></ContentSection>
         <Socials className="mt-10 laptop:mt-5 justify-center" />
         <Footer />
+        <SpeedInsights/>
         
       </div>
       {/* {process.env.NODE_ENV === "development" && (

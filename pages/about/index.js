@@ -7,6 +7,7 @@ import Header from "../../components/Header";
 import data from "../../data/portfolio.json";
 
 import Socials from "../../components/Socials";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 
@@ -69,6 +70,7 @@ export default function About(){
         </div>
         <Socials className="mt-10 laptop:mt-5 justify-center" />
         <Footer/>
+        <SpeedInsights/>
       </>
     
   );

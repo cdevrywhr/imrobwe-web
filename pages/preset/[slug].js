@@ -13,6 +13,7 @@ import Socials from "../../components/Socials";
 import PresetInfo from "../../components/PresetInfo";
 import Link from "next/link";
 import { Button } from "@material-tailwind/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const PresetPost = ({ post }) => {
@@ -93,7 +94,7 @@ const PresetPost = ({ post }) => {
 
         <Socials className="mt-10 laptop:mt-10 justify-center" />
         <Footer />
-        
+        <SpeedInsights/>
       </div>
       {/* {process.env.NODE_ENV === "development" && (
         <div className="fixed bottom-6 right-6">
