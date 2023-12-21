@@ -10,11 +10,16 @@ export default function handler(req, res) {
     if (req.method === "POST") {
       const data = matter.stringify("# New Blog", {
         date: new Date().toISOString(),
-        title: "New Blog",
+        title: "New Preset",
         tagline: "Amazing New Blog",
         preview:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        image: getRandomImage(),
+        cover: getRandomImage(),
+        image1: getRandomImage(),
+        image2: getRandomImage(),
+        image3: getRandomImage(),
+        image4: getRandomImage(),
+        image5: getRandomImage(),
         header: getRandomImage(),
         url:"",
       });

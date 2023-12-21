@@ -92,11 +92,11 @@ const Preset = ({ presets }) => {
                     key={post.slug}
                     onClick={() => Router.push(`/preset/${post.slug}`)}
                   >
-                    <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
+                    <figure className="relative max-w-sm transition-all duration-300 cursor-pointer">
                       
-                      <img class="rounded-lg" src={post.image} alt={post.title}/>
+                      <img className="rounded-lg" src={post.cover} alt={post.title}/>
                   
-                      <figcaption class="absolute px-5 text-3xl text-white bottom-6">
+                      <figcaption className="absolute px-5 text-3xl text-white bottom-6">
                           <h2>{post.title}</h2>
                       </figcaption>
                     </figure>
@@ -149,7 +149,7 @@ export async function getStaticProps() {
   const presets = getAllPreset([
     "slug",
     "title",
-    "image",
+    "cover",
     "preview",
     "author",
     "date",

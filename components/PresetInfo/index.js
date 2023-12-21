@@ -45,13 +45,13 @@ const AccordionCustomIcon = () => {
               </AccordionBody>
           </Accordion> */}
           </div>
-           <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
+           <div className="mt-3 laptop:mt-3 grid grid-cols-1 gap-4 justify-center">
               <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
               <AccordionHeader onClick={() => handleOpen(1)} className="text-white font-serif text-lg">
                   Instalation
               </AccordionHeader>
               <AccordionBody>
-              <li>Extract the ZIP file (to your desktop computer, not to your phone).</li>
+              <li>Extract the ZIP file (to your desktop computer, or your phone).</li>
               <br/>
               <li>Open Lightroom and go to the Presets section. Click on File - Import Profiles & Presets.</li>
               <br/>
