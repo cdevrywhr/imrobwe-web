@@ -35,7 +35,7 @@ const PresetPost = ({ post }) => {
       {data.showCursor && <Cursor />}
 
       <div
-        className={`container mx-auto mt-10 ${
+        className={`container mx-auto mt-0 ${
           data.showCursor && "cursor-none"
         }`}
       >
@@ -90,7 +90,7 @@ const PresetPost = ({ post }) => {
           </Link>
         </div>
         
-        <PresetInfo />
+        <PresetInfo className="justify-center flex flex-wrap mob:flex-nowrap link text-center"/>
 
         <Socials className="mt-10 laptop:mt-10 justify-center" />
         <Footer />
