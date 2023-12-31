@@ -7,11 +7,11 @@ import Head from "next/head";
 import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
 import Button from "../../components/Button";
-import BlogEditor from "../../components/BlogEditor";
 import { useRouter } from "next/router";
 import Cursor from "../../components/Cursor";
 import data from "../../data/portfolio.json";
 import Socials from "../../components/Socials";
+import Image from "../../components/Image"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const BlogPost = ({ post }) => {
@@ -19,7 +19,6 @@ const BlogPost = ({ post }) => {
   const textOne = useRef();
   const textTwo = useRef();
   const router = useRouter();
-
   useIsomorphicLayoutEffect(() => {
     stagger([textOne.current, textTwo.current], { y: 30 }, { y: 0 });
   }, []);
@@ -41,7 +40,7 @@ const BlogPost = ({ post }) => {
         <div className="mt-10 flex flex-col">
           <img
             className="w-full h-96 rounded-lg shadow-lg object-cover"
-            src={post.image}
+            src={post.header}
             alt={post.title}
           ></img>
           <h1
@@ -58,6 +57,17 @@ const BlogPost = ({ post }) => {
           </h2>
         </div>
         <ContentSection content={post.content}></ContentSection>
+        {/* <div className="laptop:p-40">
+          {.map((img) =>(
+          <Image
+            key={img.id}
+            img={img.url}
+            name={img.title}
+            description={img.description}
+          ></Image>
+          ))}
+        </div> */}
+            
         <Socials className="mt-10 laptop:mt-5 justify-center" />
         <Footer />
         <SpeedInsights/>
@@ -86,11 +96,12 @@ export async function getStaticProps({ params }) {
   const post = getPostBySlug(params.slug, [
     "date",
     "slug",
+    "url",
     "preview",
     "title",
     "tagline",
-    "preview",
     "image",
+    "header",
     "content",
   ]);
 

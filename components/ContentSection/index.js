@@ -23,6 +23,7 @@ const CodeBlock = {
   },
 };
 
+
 const ContentSection = ({ content }) => {
   return (
     <ReactMarkdown components={CodeBlock} className="markdown-class">
