@@ -82,10 +82,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
+                  <Button onClick={() => router.push("/preset")}>Preset</Button>
                   {showAbout && (
                     <Button onClick={() => router.push("/about")}>About</Button>
                   )}
-                  <Button onClick={() => router.push("/preset")}>Preset</Button>
                   {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
                   <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
@@ -102,10 +102,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
+                  <Button onClick={() => router.push("/preset")}>Preset</Button>
                   {showAbout && (
                     <Button onClick={() => router.push("/about")}>About</Button>
                   )}
-                  <Button onClick={() => router.push("/preset")}>Preset</Button>
                   {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
                   <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
@@ -140,11 +140,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
               )}
+              <Button onClick={() => router.push("/preset")}>Preset</Button>
+              {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
               {showAbout && (
                 <Button onClick={() => router.push("/about")}>About</Button>
               )}
-              <Button onClick={() => router.push("/preset")}>Preset</Button>
-              {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
               <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
@@ -174,10 +174,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
               )}
+              <Button onClick={() => router.push("/preset")}>Preset</Button>
               {showAbout && (
                 <Button onClick={() => router.push("/about")}>About</Button>
               )}
-              <Button onClick={() => router.push("/preset")}>Preset</Button>
               {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
               <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
