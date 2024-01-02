@@ -44,7 +44,7 @@ const AccordionCustomIcon = () => {
            <div className="mt-3 laptop:mt-10 grid grid-cols-1 gap-4 justify-center">
               <Accordion open={open === 1} icon={<Icon id={1} open={open} />} className="mb-2 rounded-lg border border-blue-gray-100 px-4">
               <AccordionHeader onClick={() => handleOpen(1)} className={`border-b-0 transition-colors ${
-                open === 1 ? "text-white hover:!text-white" : "text-white"
+                open === 1 ? "text-white hover:text-white" : "text-white"
                 }`}>
                   Instalation
               </AccordionHeader>
