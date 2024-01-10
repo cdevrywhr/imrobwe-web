@@ -25,6 +25,12 @@
       "title": "Twitter",
       "icon":"/images/tw.svg",
       "link": "https://twitter.com/_kocaklu"
+    },
+    {
+      "id": "4",
+      "title": "Gmail",
+      "icon":"/images/gmail.svg",
+      "link": "mailto:robyjulian212@gmail.com"
     }
   ],
   "analog":{

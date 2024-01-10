@@ -88,11 +88,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     <Button onClick={() => router.push("/about")}>About</Button>
                   )}
                   {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
-                  <Button
+                  {/* <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
                     Contact
-                  </Button>
+                  </Button> */}
                   <Socials className="mt-3"/>
                 </div>
               ) : (
@@ -109,11 +109,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     <Button onClick={() => router.push("/about")}>About</Button>
                   )}
                   {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
-                  <Button
+                  {/* <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
                     Contact
-                  </Button>
+                  </Button> */}
                   <Socials className="mt-3"/>
                 </div>
               )}
@@ -148,11 +148,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               {showAbout && (
                 <Button onClick={() => router.push("/about")}>About</Button>
               )}
-              <Button
+              {/* <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
                     Contact
-              </Button>
+              </Button> */}
             </div>
             <div className="col-end-7 col-span-2 ">
               <Socials/>
@@ -183,11 +183,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 <Button onClick={() => router.push("/about")}>About</Button>
               )}
               {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
-              <Button
+              {/* <Button
                     onClick={() => window.open("mailto:robyjulian212@gmail.com")}
                   >
                     Contact
-              </Button>
+              </Button> */}
             </div>
             <div className="col-end-7 col-span-2 ">
               <Socials/>
