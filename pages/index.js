@@ -9,6 +9,7 @@ import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Each } from "@/utils/each";
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -44,39 +45,39 @@ export default function Home() {
           <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-3 gap-4">
             
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
-                {concert.first.map((project) => (
+                <Each of={concert.first} render={(item ,index) =>
                   <WorkCard
-                    key={project.id}
-                    img={project.imageSrc}
-                    // name={project.title}
+                    key={item.id}
+                    img={item.imageSrc}
+                    name={item.title}
                     // description={project.description}
                     // onClick={() => window.open(project.url)}
                   />
-                ))}
+                }/>
               </div>
 
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
-                {concert.second.map((project) => (
+                <Each of={concert.second} render={(item ,index) =>
                   <WorkCard
-                    key={project.id}
-                    img={project.imageSrc}
-                    // name={project.title}
+                    key={item.id}
+                    img={item.imageSrc}
+                    name={item.title}
                     // description={project.description}
                     // onClick={() => window.open(project.url)}
                   />
-                ))}
+                }/>
               </div>
 
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
-                {concert.third.map((project) => (
+                <Each of={concert.third} render={(item ,index) =>
                   <WorkCard
-                    key={project.id}
-                    img={project.imageSrc}
-                    // name={project.title}
+                    key={item.id}
+                    img={item.imageSrc}
+                    name={item.title}
                     // description={project.description}
                     // onClick={() => window.open(project.url)}
                   />
-                ))}
+                }/>
               </div>
           </div>
         </div>
