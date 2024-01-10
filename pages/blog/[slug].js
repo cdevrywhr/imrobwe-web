@@ -11,7 +11,6 @@ import { useRouter } from "next/router";
 import Cursor from "../../components/Cursor";
 import data from "../../data/portfolio.json";
 import Socials from "../../components/Socials";
-import Image from "../../components/Image"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const BlogPost = ({ post }) => {
@@ -56,18 +55,7 @@ const BlogPost = ({ post }) => {
             {post.tagline}
           </h2>
         </div>
-        <ContentSection content={post.content}></ContentSection>
-        {/* <div className="laptop:p-40">
-          {.map((img) =>(
-          <Image
-            key={img.id}
-            img={img.url}
-            name={img.title}
-            description={img.description}
-          ></Image>
-          ))}
-        </div> */}
-            
+        <ContentSection content={post.content}></ContentSection>            
         <Socials className="mt-10 laptop:mt-5 justify-center" />
         <Footer />
         <SpeedInsights/>

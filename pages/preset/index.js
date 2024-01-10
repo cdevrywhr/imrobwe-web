@@ -101,31 +101,6 @@ const Preset = ({ presets }) => {
                           <h2>{post.title}</h2>
                       </figcaption>
                     </figure>
-
-                    {/* <img
-                      className="w-full h-full rounded-lg shadow-lg object-cover"
-                      src={post.image}
-                      alt={post.title}
-                    ></img>
-                    <h2 className="mt-5 text-4xl">{post.title}</h2> */}
-                    {/* <p className="mt-2 opacity-50 text-lg text-justify">{post.preview}</p> */}
-
-                    {/* <span className="text-sm mt-5 opacity-25">
-                      {ISOToDate(post.date)}
-                    </span> */}
-                    {/* {process.env.NODE_ENV === "development" && mounted && (
-                      <div className="absolute top-0 right-0">
-                        <Button
-                          onClick={(e) => {
-                            deleteBlog(post.slug);
-                            e.stopPropagation();
-                          }}
-                          type={"primary"}
-                        >
-                          Delete
-                        </Button>
-                      </div>
-                    )} */}
                   </div>
                 ))}
             </div>
@@ -134,13 +109,6 @@ const Preset = ({ presets }) => {
         <Socials className="mt-10 laptop:mt-5 justify-center" />
         <Footer/>
         <SpeedInsights/>
-        {/* {process.env.NODE_ENV === "development" && mounted && (
-          <div className="fixed bottom-6 right-6">
-            <Button onClick={createBlog} type={"primary"}>
-              Add New Post +{" "}
-            </Button>
-          </div>
-        )} */}
       </>
     )
   );
