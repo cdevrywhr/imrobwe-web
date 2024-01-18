@@ -44,7 +44,7 @@ const PresetPost = ({ post }) => {
           <img
             className="w-full mob:h-full laptop:h-full rounded-lg shadow-lg object-cover"
             src={post.header}
-            alt={post.title}
+            alt={post.header}
           ></img>
           <h1
             ref={textOne}
@@ -91,7 +91,6 @@ const PresetPost = ({ post }) => {
         </div>
         
         <PresetInfo className="justify-center flex flex-wrap mob:flex-nowrap link text-center"/>
-
         <Socials className="mt-10 laptop:mt-10 justify-center" />
         <Footer />
         <SpeedInsights/>

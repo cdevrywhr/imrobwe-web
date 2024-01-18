@@ -83,7 +83,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
                   <Button onClick={() => router.push("/preset")}>Preset</Button>
-                  <Button onClick={() => router.push("/mygear")}>My Gear</Button>
+                  {/* <Button onClick={() => router.push("/mygear")}>My Gear</Button> */}
                   {showAbout && (
                     <Button onClick={() => router.push("/about")}>About</Button>
                   )}
@@ -104,7 +104,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
                   <Button onClick={() => router.push("/preset")}>Preset</Button>
-                  <Button onClick={() => router.push("/mygear")}>My Gear</Button>
+                  {/* <Button onClick={() => router.push("/mygear")}>My Gear</Button> */}
                   {showAbout && (
                     <Button onClick={() => router.push("/about")}>About</Button>
                   )}
@@ -143,7 +143,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               <Button onClick={() => router.push("/blog")}>Blog</Button>
               )}
               <Button onClick={() => router.push("/preset")}>Preset</Button>
-              <Button onClick={() => router.push("/mygear")}>My Gear</Button>
+              {/* <Button onClick={() => router.push("/mygear")}>My Gear</Button> */}
               {/* <Button onClick={() => router.push("/analog")}>Analog</Button> */}
               {showAbout && (
                 <Button onClick={() => router.push("/about")}>About</Button>
@@ -178,7 +178,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               <Button onClick={() => router.push("/blog")}>Blog</Button>
               )}
               <Button onClick={() => router.push("/preset")}>Preset</Button>
-              <Button onClick={() => router.push("/mygear")}>My Gear</Button>
+              {/* <Button onClick={() => router.push("/mygear")}>My Gear</Button> */}
               {showAbout && (
                 <Button onClick={() => router.push("/about")}>About</Button>
               )}
