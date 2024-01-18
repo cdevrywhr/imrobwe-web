@@ -1,12 +1,9 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Header from "../components/Header";
 import WorkCard from "../components/WorkCard";
 import Socials from "../components/Socials";
-import { stagger } from "../animations";
 import Footer from "../components/Footer";
 import Head from "next/head";
-import Button from "../components/Button";
-import Link from "next/link";
 import Cursor from "../components/Cursor";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Each } from "@/utils/each";
@@ -51,7 +48,7 @@ export default function Home() {
                     img={item.imageSrc}
                     name={item.title}
                     // description={project.description}
-                    // onClick={() => window.open(project.url)}
+                    // onClick={showModal(item.imageSrc)}
                   />
                 }/>
               </div>
@@ -63,7 +60,7 @@ export default function Home() {
                     img={item.imageSrc}
                     name={item.title}
                     // description={project.description}
-                    // onClick={() => window.open(project.url)}
+                    // onClick={showModal(item.imageSrc)}
                   />
                 }/>
               </div>
@@ -75,10 +72,10 @@ export default function Home() {
                     img={item.imageSrc}
                     name={item.title}
                     // description={project.description}
-                    // onClick={() => window.open(project.url)}
+                    // onClick={showModal(item.imageSrc)}
                   />
                 }/>
-              </div>
+              </div>            
           </div>
         </div>
       </div>
