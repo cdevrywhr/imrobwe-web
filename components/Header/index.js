@@ -154,7 +154,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     Contact
               </Button> */}
             </div>
-            <div className="col-end-7 col-span-2 ">
+            <div className="col-end-7 col-span-5">
               <Socials/>
             </div>
 
@@ -189,7 +189,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     Contact
               </Button> */}
             </div>
-            <div className="col-end-7 col-span-2 ">
+            <div className="col-end-7 col-span-5">
               <Socials/>
             </div>
 
