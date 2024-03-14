@@ -46,6 +46,7 @@ const PresetPost = ({ post }) => {
             className="w-full mob:h-full laptop:h-full rounded-lg shadow-lg object-cover"
             src={post.header}
             alt={post.header}
+            width={500} height={500}
           />
           <h1
             ref={textOne}
@@ -67,14 +68,14 @@ const PresetPost = ({ post }) => {
           </div>
           <div className="mt-3 laptop:mt-0 grid-rows-2 tablet:grid-cols-3 gap-4">
             <div className="mt-3 laptop:mt-20 grid grid-cols-1 grid-rows-1 tablet:grid-cols-3 gap-4">
-              <Image src={`${post.cover}`} className="w-auto tablet:h-50 laptop:h-60 "/>
-              <Image src={`${post.image1}`} className="w-auto tablet:h-50 laptop:h-60 "/>
-              <Image src={`${post.image2}`} className="w-auto tablet:h-50 laptop:h-60 "/>
+              <Image src={`${post.cover}`} width={500} height={500} className="w-auto tablet:h-50 laptop:h-60 "/>
+              <Image src={`${post.image1}`} width={500} height={500} className="w-auto tablet:h-50 laptop:h-60 "/>
+              <Image src={`${post.image2}`} width={500} height={500} className="w-auto tablet:h-50 laptop:h-60 "/>
             </div>
             <div className="mt-3 laptop:mt-10 grid grid-cols-1 grid-rows-1 tablet:grid-cols-3 gap-4">
-              <Image src={`${post.image3}`} className="w-auto tablet:h-50 laptop:h-60"/>
-              <Image src={`${post.image4}`} className="w-auto tablet:h-50 laptop:h-60"/>
-              <Image src={`${post.image5}`} className="w-auto tablet:h-50 laptop:h-60"/>
+              <Image src={`${post.image3}`} width={500} height={500} className="w-auto tablet:h-50 laptop:h-60"/>
+              <Image src={`${post.image4}`} width={500} height={500} className="w-auto tablet:h-50 laptop:h-60"/>
+              <Image src={`${post.image5}`} width={500} height={500} className="w-auto tablet:h-50 laptop:h-60"/>
             </div>
           </div>
           

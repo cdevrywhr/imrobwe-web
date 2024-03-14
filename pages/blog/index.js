@@ -98,6 +98,7 @@ const Blog = ({ posts }) => {
                       className="w-full h-60 rounded-lg shadow-lg object-cover"
                       src={post.image}
                       alt={post.title}
+                      width={500} height={500}
                     />
                     <h2 className="mt-5 text-4xl">{post.title}</h2>
                     <p className="mt-2 opacity-50 text-lg text-justify">{post.preview}</p>

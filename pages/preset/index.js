@@ -96,7 +96,7 @@ const Preset = ({ presets }) => {
                   >
                     <figure className="relative max-w-sm transition-all duration-300 cursor-pointer">
                       
-                      <Image className="rounded-lg" src={post.cover} alt={post.title}/>
+                      <Image className="rounded-lg" src={post.cover} alt={post.title} width={500} height={500}/>
                   
                       <figcaption className="absolute px-5 text-3xl text-white bottom-6">
                           <h2>{post.title}</h2>
