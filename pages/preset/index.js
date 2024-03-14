@@ -10,6 +10,7 @@ import data from "../../data/portfolio.json";
 import { ISOToDate, useIsomorphicLayoutEffect } from "../../utils";
 import { getAllPreset } from "../../utils/api";
 import Socials from "../../components/Socials";
+import Image from "next/image"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const Preset = ({ presets }) => {
@@ -95,7 +96,7 @@ const Preset = ({ presets }) => {
                   >
                     <figure className="relative max-w-sm transition-all duration-300 cursor-pointer">
                       
-                      <img className="rounded-lg" src={post.cover} alt={post.title}/>
+                      <Image className="rounded-lg" src={post.cover} alt={post.title}/>
                   
                       <figcaption className="absolute px-5 text-3xl text-white bottom-6">
                           <h2>{post.title}</h2>

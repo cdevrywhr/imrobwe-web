@@ -12,6 +12,7 @@ import data from "../../data/portfolio.json";
 import Socials from "../../components/Socials";
 import PresetInfo from "../../components/PresetInfo";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@material-tailwind/react";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -41,11 +42,11 @@ const PresetPost = ({ post }) => {
       >
         <Header isBlog={true} />
         <div className="mt-10 flex flex-col">
-          <img
+          <Image
             className="w-full mob:h-full laptop:h-full rounded-lg shadow-lg object-cover"
             src={post.header}
             alt={post.header}
-          ></img>
+          />
           <h1
             ref={textOne}
             className="mt-10 text-4xl mob:text-2xl laptop:text-6xl text-bold"
@@ -66,14 +67,14 @@ const PresetPost = ({ post }) => {
           </div>
           <div className="mt-3 laptop:mt-0 grid-rows-2 tablet:grid-cols-3 gap-4">
             <div className="mt-3 laptop:mt-20 grid grid-cols-1 grid-rows-1 tablet:grid-cols-3 gap-4">
-              <img src={`${post.cover}`} className="w-auto tablet:h-50 laptop:h-60 "/>
-              <img src={`${post.image1}`} className="w-auto tablet:h-50 laptop:h-60 "/>
-              <img src={`${post.image2}`} className="w-auto tablet:h-50 laptop:h-60 "/>
+              <Image src={`${post.cover}`} className="w-auto tablet:h-50 laptop:h-60 "/>
+              <Image src={`${post.image1}`} className="w-auto tablet:h-50 laptop:h-60 "/>
+              <Image src={`${post.image2}`} className="w-auto tablet:h-50 laptop:h-60 "/>
             </div>
             <div className="mt-3 laptop:mt-10 grid grid-cols-1 grid-rows-1 tablet:grid-cols-3 gap-4">
-              <img src={`${post.image3}`} className="w-auto tablet:h-50 laptop:h-60"/>
-              <img src={`${post.image4}`} className="w-auto tablet:h-50 laptop:h-60"/>
-              <img src={`${post.image5}`} className="w-auto tablet:h-50 laptop:h-60"/>
+              <Image src={`${post.image3}`} className="w-auto tablet:h-50 laptop:h-60"/>
+              <Image src={`${post.image4}`} className="w-auto tablet:h-50 laptop:h-60"/>
+              <Image src={`${post.image5}`} className="w-auto tablet:h-50 laptop:h-60"/>
             </div>
           </div>
           

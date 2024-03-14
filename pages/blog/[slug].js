@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 import Cursor from "../../components/Cursor";
 import data from "../../data/portfolio.json";
 import Socials from "../../components/Socials";
+import Image from "next/image";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const BlogPost = ({ post }) => {
@@ -37,11 +38,11 @@ const BlogPost = ({ post }) => {
       >
         <Header isBlog={true} />
         <div className="mt-10 flex flex-col">
-          <img
+          <Image
             className="w-full h-96 rounded-lg shadow-lg object-cover"
             src={post.header}
             alt={post.title}
-          ></img>
+          />
           <h1
             ref={textOne}
             className="mt-10 text-4xl mob:text-2xl laptop:text-6xl text-bold"

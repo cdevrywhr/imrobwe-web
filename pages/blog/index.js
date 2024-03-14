@@ -10,6 +10,7 @@ import data from "../../data/portfolio.json";
 import { ISOToDate, useIsomorphicLayoutEffect } from "../../utils";
 import { getAllPosts } from "../../utils/api";
 import Socials from "../../components/Socials";
+import Image from "next/image";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const Blog = ({ posts }) => {
@@ -93,11 +94,11 @@ const Blog = ({ posts }) => {
                     key={post.slug}
                     onClick={() => Router.push(`/blog/${post.slug}`)}
                   >
-                    <img
+                    <Image
                       className="w-full h-60 rounded-lg shadow-lg object-cover"
                       src={post.image}
                       alt={post.title}
-                    ></img>
+                    />
                     <h2 className="mt-5 text-4xl">{post.title}</h2>
                     <p className="mt-2 opacity-50 text-lg text-justify">{post.preview}</p>
                     <span className="text-sm mt-5 opacity-25">

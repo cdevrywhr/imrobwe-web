@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Image from 'next/image'
+import Image from "next/image"
 import CustomModal from '../Modal';
 
 const WorkCard = ({ img, name, description, onClick,initialIndexValue }) => {
