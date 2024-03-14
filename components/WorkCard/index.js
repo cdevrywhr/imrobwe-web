@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Image from 'next/image'
 import CustomModal from '../Modal';
 
 const WorkCard = ({ img, name, description, onClick,initialIndexValue }) => {
@@ -34,7 +35,7 @@ const WorkCard = ({ img, name, description, onClick,initialIndexValue }) => {
         {description ? description : "Description"}
       </h2> */}
       <button onClick={handleOpen}>
-        <img src={img} alt={name} className="h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300" />
+        <Image src={img} alt={name} className="h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300" />
       </button>
       <CustomModal open={open} handleClose={handleClose} img={img} name={name} />
       {/* <CustomModal open={true} handleClose={handleClose} img={img} initialIndex={initialIndexValue} /> */}
