@@ -7,6 +7,10 @@ import Head from "next/head";
 import Cursor from "../components/Cursor";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Each } from "@/utils/each";
+import dynamic from 'next/dynamic';
+
+const LazyWorkCard = dynamic(() => import('../components/WorkCard'));
+
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -43,7 +47,7 @@ export default function Home() {
             
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
                 <Each of={concert.first} render={(item ,index) =>
-                  <WorkCard
+                  <LazyWorkCard
                     key={item.id}
                     img={item.imageSrc}
                     name={item.title}
@@ -55,7 +59,7 @@ export default function Home() {
 
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
                 <Each of={concert.second} render={(item ,index) =>
-                  <WorkCard
+                  <LazyWorkCard
                     key={item.id}
                     img={item.imageSrc}
                     name={item.title}
@@ -67,7 +71,7 @@ export default function Home() {
 
               <div className="mt-3 laptop:mt-3 grid grid-cols-1 tablet:grid-cols-1 gap-4">
                 <Each of={concert.third} render={(item ,index) =>
-                  <WorkCard
+                  <LazyWorkCard
                     key={item.id}
                     img={item.imageSrc}
                     name={item.title}
