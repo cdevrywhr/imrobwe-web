@@ -13,6 +13,9 @@ import data from "../../data/portfolio.json";
 import Socials from "../../components/Socials";
 import Image from "next/image";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import dynamic from 'next/dynamic';
+
+const ContentLazy = dynamic(() => import('../../components/ContentSection'));
 
 const BlogPost = ({ post }) => {
   const [showEditor, setShowEditor] = useState(false);
@@ -57,7 +60,7 @@ const BlogPost = ({ post }) => {
             {post.tagline}
           </h2>
         </div>
-        <ContentSection content={post.content}></ContentSection>            
+        <ContentLazy content={post.content}></ContentLazy>            
         <Socials className="mt-10 laptop:mt-5 justify-center" />
         <Footer />
         <SpeedInsights/>

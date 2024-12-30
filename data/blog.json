@@ -137,5 +137,67 @@
             "url":"https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/concert/blog/bestof2023/thyartismurder.jpg",
             "description":"Vocalis Thy Art Is Murder Take a Selfie of Crowd at Rock In Solo 2023 Solo"
         }
+    ],
+    "bestof2024":[
+        {
+            "id":1,
+            "title":"Swarm",
+            "url":"https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/refs/heads/concert/blog/bestof2024/DSC00442-Enhanced-NR-Edit-2.jpg",
+            "description":"Swarm Screamo at Chromatic Chaos Jakarta"
+        },
+        {
+            "id":2,
+            "title":"YOASOBI",
+            "url":"https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/refs/heads/concert/blog/bestof2024/DSC01363-Enhanced-NR.jpg",
+            "description":"YOASOBI Asia Tour at Jakarta"
+        },
+        {
+            "id":3,
+            "title":"In Flames",
+            "url":"https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/refs/heads/concert/blog/bestof2024/DSC01595-Enhanced-NR.jpg",
+            "description":"Crowd of In FLames at Klash Of The Titans Yogyakarta"
+        },
+        {
+            "id":4,
+            "title":"Kreator",
+            "url":"https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/refs/heads/concert/blog/bestof2024/DSC02026-Enhanced-NR.jpg",
+            "description":"Sami Yli-Sirniö of Kreator at Klash Of The Titans Yogyakarta"
+        },
+        {
+            "id":5,
+            "title":"Baby Metal",
+            "url":"https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/refs/heads/concert/blog/bestof2024/DSC02192-Enhanced-NR.jpg",
+            "description":"Drumer of KAMI BAND at Nex Fest Jakarta"
+        },
+        {
+            "id":6,
+            "title":"Bring Me The Horizon",
+            "url":"https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/refs/heads/concert/blog/bestof2024/DSC03300-Enhanced-NR.jpg",
+            "description":"Oli Sykes of Bring Me The Horizon at Nex Fest Jakarta"
+        },
+        {
+            "id":7,
+            "title":"Sleeping With Siren",
+            "url":"v",
+            "description":"Kellin Quiin of Sleeping With Siren at Everblast Jakarta"
+        },
+        {
+            "id":8,
+            "title":"Lamb Of God",
+            "url":"https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/refs/heads/concert/blog/bestof2024/DSC08305-Enhanced-NR.jpg",
+            "description":"David Randall Blythe of Lamb Of God at HammerSonic Jakarta"
+        },
+        {
+            "id":9,
+            "title":"Laufey",
+            "url":"https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/refs/heads/concert/blog/bestof2024/DSC09364-Enhanced-NR.jpg",
+            "description":"Laufey & Junia Lin at Java Jazz Festival Jakarta"
+        },
+        {
+            "id":10,
+            "title":"Marty Friedman",
+            "url":"https://raw.githubusercontent.com/cdevrywhr/imrobwe-web/refs/heads/concert/blog/bestof2024/DSC06269-Enhanced-NR.jpg",
+            "description":"Crowd of Marty Friedman at HammerSonic Jakarta"
+        }
     ]
 }
